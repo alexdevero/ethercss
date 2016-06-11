@@ -1,5 +1,5 @@
 {
-  "name": "spartan",
+  "name": "ethercss",
   "version": "0.0.1",
   "description": "Lightweight and flexible CSS framework for modern web.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexdevero/Spartan.git"
+    "url": "https://github.com/alexdevero/EtherCSS.git"
   },
   "keywords": [
     "css",
@@ -23,7 +23,7 @@
   "author": "@alexdevero",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexdevero/Spartan/issues"
+    "url": "https://github.com/alexdevero/EtherCSS/issues"
   },
-  "homepage": "https://github.com/alexdevero/Spartan#readme"
+  "homepage": "https://github.com/alexdevero/EtherCSS#readme"
 }
