@@ -1,0 +1,17 @@
+//
+// Blockquotes
+//
+
+blockquote {
+  padding-top: 1rem;
+  padding-right: .5rem;
+  padding-bottom: 1rem;
+  padding-left: .5rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: remy(4px) solid $color-quaternary;
+
+  & *:last-child {
+    margin: 0;
+  }
+}
