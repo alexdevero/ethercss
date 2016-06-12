@@ -1,5 +1,5 @@
 # EtherCSS
-The only CSS framework you will ever need
+CSS framework for the future web.
 
 _EtherCSS is currently in aplha stage_
 
