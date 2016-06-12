@@ -112,9 +112,7 @@ h1 + h2 {
   margin-top: remy(26px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    h1 + h2 {
-      margin-top: remy(31px);
-    }
+    margin-top: remy(31px);
   }
 }
 
@@ -124,11 +122,7 @@ h4 + h5 {
   margin-top: remy(13px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    h2 + h3,
-    h3 + h4,
-    h4 + h5 {
-      margin-top: remy(15.5px);
-    }
+    margin-top: remy(15.5px);
   }
 }
 
@@ -136,9 +130,116 @@ h5 + h6 {
   margin-top: remy(-13px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    h5 + h6 {
-      margin-top: remy(-15.5px);
-    }
+    margin-top: remy(-15.5px);
   }
 }
 
+hgroup {
+  display: block;
+}
+
+abbr {
+  letter-spacing: 0.1em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+cite {
+  display: block;
+  font-style: normal;
+}
+
+dfn {
+  font-style: italic;
+}
+
+figure blockquote {
+  figure blockquote {
+  padding-top: remy(26px);
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: remy(26px);
+
+  @media screen and (min-width: 40em) {
+    padding-top: remy(62px);
+    padding-right: remy(31px);
+    padding-bottom: 0;
+    padding-left: remy(31px);
+    text-align: center;
+  }
+}
+
+figure blockquote p {
+  font-size: remy(27px);
+  line-height: remy(39px);
+
+  @media screen and (min-width: 40em) {
+    line-height: remy(46.5px);
+  }
+}
+
+hr {
+  display: block;
+  box-sizing: content-box;
+  margin-top: remy(52px);
+  margin-right: auto;
+  margin-bottom: remy(52px);
+  margin-left: auto;
+  color: #222;
+  width: remy(100px);
+  height: remy(26px);
+  background-size: 100% remy(26px);
+  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
+  border: 0;
+
+  @media screen and (min-width: 40em) {
+    margin-top: remy(62px);
+    margin-bottom: remy(62px);
+    height: remy(31px);
+  }
+  @media screen and (min-width: 40em) {
+    background-size: 100% remy(31px);
+    background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
+  }
+}
+
+em,
+i {
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+mark {
+  color: #000;
+  background: #ff0;
+}
+
+small {
+  line-height: remy(13px);
+  font-size: 70%;
+
+  @media screen and (min-width: 40em) {
+    line-height: remy(15.5px);
+  }
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+  bottom: -0.25em;
+}
