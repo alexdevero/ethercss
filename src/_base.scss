@@ -1,0 +1,20 @@
+/**
+ * Base
+ */
+
+// Set box-sizing globally to handle padding and border widths
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
