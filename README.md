@@ -1,5 +1,5 @@
 # EtherCSS
-CSS framework for the future web.
+CSS framework for the Web of tomorrow.
 
 _EtherCSS is currently in aplha stage_
 
