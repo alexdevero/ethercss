@@ -1,0 +1,25 @@
+//
+// Config
+//
+
+// Breakpoints
+
+$screen--xm: 400px;
+$screen--sm: 544px;
+$screen--md: 768px;
+$screen--lg: 992px;
+$screen--xl: 1200px;
+$screen--xxl: 1440px;
+
+// Colors
+
+$color--primary: #00b4ff;// Pure (or mostly pure) blue
+$color--secondary: #556270;// Very dark grayish blue
+$color--tertiary: #f4f5f6;// Light grayish blue
+$color--accent: #f23a65;// Bright, strawberry, red
+$color--black: #111;// Very dark gray (mostly black)
+
+// Variables
+
+$radius--full: remy(1000px);
+$radius--small: remy(4px);
