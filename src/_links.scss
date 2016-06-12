@@ -1,0 +1,15 @@
+/**
+ * Links
+ */
+
+a {
+  color: $color--primary;
+  text-decoration: none;
+
+  @include transition(color);
+
+  &:focus,
+  &:hover {
+    color: darken($color--primary, 13%);
+  }
+}
