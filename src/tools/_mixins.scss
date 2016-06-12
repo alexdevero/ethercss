@@ -2,3 +2,6 @@
 // Mixins
 //
 
+@mixin transition($prop, $duration: 2.5s, $timing: cubic-bezier(.4,0,1,1)) {
+  transition: $prop $duration $timing;
+}
