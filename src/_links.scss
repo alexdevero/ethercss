@@ -12,4 +12,21 @@ a {
   &:hover {
     color: darken($color--primary, 13%);
   }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+
+  &:active {
+    color: darken($color--primary, 17%);
+  }
+
+  &:visited {
+    color: darken($color--primary, 21%);
+  }
+
+  &:visited:hover {
+    color: darken($color--primary, 34%);
+  }
 }
