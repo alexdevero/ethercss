@@ -167,7 +167,7 @@ figure blockquote {
   padding-bottom: 0;
   padding-left: remy(26px);
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: $breakpoint--typography) {
     padding-top: remy(62px);
     padding-right: remy(31px);
     padding-bottom: 0;
@@ -180,7 +180,7 @@ figure blockquote p {
   font-size: remy(27px);
   line-height: remy(39px);
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: $breakpoint--typography) {
     line-height: remy(46.5px);
   }
 }
@@ -199,12 +199,12 @@ hr {
   background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
   border: 0;
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: $breakpoint--typography) {
     margin-top: remy(62px);
     margin-bottom: remy(62px);
     height: remy(31px);
   }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: $breakpoint--typography) {
     background-size: 100% remy(31px);
     background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
   }
@@ -226,7 +226,7 @@ small {
   line-height: remy(13px);
   font-size: 70%;
 
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: $breakpoint--typography) {
     line-height: remy(15.5px);
   }
 }
