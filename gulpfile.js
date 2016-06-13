@@ -5,6 +5,7 @@
 
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
+    csslint = require('gulp-csslint'),
     rename = require('gulp-rename'),
     sass = require('gulp-ruby-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -15,6 +16,8 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
   return sass('src/ethercss.scss', {sourcemap: true})
     .on('error', sass.logError)
+    .pipe(csslint('csslintrc.json'))
+    .pipe(csslint.reporter())
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
     }))
@@ -30,6 +33,8 @@ gulp.task('sass', function() {
 gulp.task('sassMin', function() {
   return sass('src/ethercss.scss', {noCache: true, sourcemap: true, style: 'compressed'})
     .on('error', sass.logError)
+    .pipe(csslint('csslintrc.json'))
+    .pipe(csslint.reporter())
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
     }))
