@@ -28,7 +28,7 @@ gulp.task('sass', function() {
 // Sass to CSS minified
 
 gulp.task('sassMin', function() {
-  return sass('src/ethercss.scss', {sourcemap: true, style: 'compressed'})
+  return sass('src/ethercss.scss', {noCache: true, sourcemap: true, style: 'compressed'})
     .on('error', sass.logError)
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
