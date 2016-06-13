@@ -48,7 +48,6 @@ Desktop.ini
 # Development folders and files #
 #################################
 .tmp/
-dist/
 node_modules/
 logs/
 *.log
