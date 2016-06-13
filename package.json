@@ -1,6 +1,6 @@
 {
   "name": "ethercss",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Lightweight and flexible CSS framework for the Web of tomorrow.",
   "main": "index.js",
   "scripts": {
@@ -29,9 +29,11 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-csslint": "^0.3.1",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7"
-  }
+  },
+  "dependencies": {}
 }
