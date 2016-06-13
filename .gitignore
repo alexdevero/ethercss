@@ -54,3 +54,4 @@ logs/
 *.log
 npm-debug.log*
 .npm
+.sass-cache/
