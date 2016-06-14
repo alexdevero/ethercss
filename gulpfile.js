@@ -5,6 +5,7 @@
 
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
+    csscomb = require('gulp-csscomb'),
     csslint = require('gulp-csslint'),
     rename = require('gulp-rename'),
     sass = require('gulp-ruby-sass'),
@@ -21,6 +22,7 @@ gulp.task('sass', function() {
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
     }))
+    .pipe(csscomb())
     .pipe(sourcemaps.write('.', {
       includeContent: false,
       sourceRoot: 'source'
