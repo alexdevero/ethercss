@@ -55,11 +55,12 @@ EtherCSS use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at 
 - Separate each ruleset by a blank line
 - Don't use prefixes, there is a task to generate this automatically
 
-```sass
+```
+Sass (scss):
 .selector-a,
 .selector-b,
 .selector-c,
-.selector-d[type='text']
+.selector-d[type='text'] {
   box-sizing: border-box
   display: inline-block
   content: ''
@@ -67,12 +68,15 @@ EtherCSS use [Sass](http://sass-lang.com/) to give super powers to CSS. Look at 
   margin-left: 5.0rem
   font-family: 'Helvetica-Neue', 'Helvetica', 'Arial', sans-serif
   color: #333
+}
 
-  .other-selector-a
-    background: #fff
+.other-selector-a {
+  background: #fff
+}
 
-  .other-selector-b
-    background: #fff
+.other-selector-b {
+  background: #fff
+}
 ```
 
 *Note: This style guide was inspired by [code-guide](https://github.com/mdo/code-guide). EtherCSS uses an `csslintrc.json` file that is used by CSSLint gulp plugin, to enforce these coding standards.*
