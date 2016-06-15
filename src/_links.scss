@@ -5,12 +5,15 @@
 a {
   color: $color--primary;
   text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 
   @include transition(color);
 
   &:focus,
   &:hover {
     color: darken($color--primary, 13%);
+    outline-width: 0;
   }
 
   &:hover,
