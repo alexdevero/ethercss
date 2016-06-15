@@ -2,13 +2,10 @@
  * Typography
  */
 
-// Breakpoint for typograhy
-
-$breakpoint--typography: 640px;
-
 // Default html styles
 
 html {
+  font-family: sans-serif;
   font-size: 16px;
   font-size: 100%;
   color: $color--black;
@@ -143,12 +140,15 @@ abbr {
 }
 
 abbr[title] {
-  border-bottom: 1px dotted;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  /*border-bottom: 1px dotted;*/
+  border-bottom: none;
 }
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 cite {
@@ -184,31 +184,6 @@ figure blockquote p {
   }
 }
 
-hr {
-  display: block;
-  box-sizing: content-box;
-  margin-top: remy(52px);
-  margin-right: auto;
-  margin-bottom: remy(52px);
-  margin-left: auto;
-  color: #222;
-  width: remy(100px);
-  height: remy(26px);
-  background-size: 100% remy(26px);
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
-  border: 0;
-
-  @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(62px);
-    margin-bottom: remy(62px);
-    height: remy(31px);
-  }
-  @media screen and (min-width: $breakpoint--typography) {
-    background-size: 100% remy(31px);
-    background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
-  }
-}
-
 em,
 i {
   position: relative;
@@ -223,7 +198,7 @@ mark {
 
 small {
   line-height: remy(13px);
-  font-size: 70%;
+  font-size: 80%;
 
   @media screen and (min-width: $breakpoint--typography) {
     line-height: remy(15.5px);
@@ -238,7 +213,12 @@ sup {
   vertical-align: baseline;
 }
 
-sup {
-  top: -0.5em;
+sub {
   bottom: -0.25em;
 }
+
+sup {
+  top: -0.5em;
+}
+
+
