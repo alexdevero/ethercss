@@ -9,7 +9,7 @@ We would love for you to contribute to EtherCSS and help us make this even bette
 - [Submit a Pull Request](#submit-a-pull-request)
 - [Building](#building)
 - [Style Guide](#style-guide)
-<!-- [Code of Conduct](#code-of-conduct) -->
+- [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
 
