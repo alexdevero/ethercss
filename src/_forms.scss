@@ -49,6 +49,8 @@ select {
 
 textarea {
   overflow: auto;
+  height: auto;
+  min-height: 50px;
 }
 
 [type="checkbox"],
