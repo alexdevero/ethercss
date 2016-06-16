@@ -22,11 +22,15 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+     -moz-appearance: button;
+  line-height: 1;
+  text-transform: uppercase;
+  font: inherit;
 }
 
 button {
   overflow: visible;
+  padding: 0;
   margin: 0;
-  font: inherit;
-  text-transform: none;
+  border: 0;
 }
