@@ -2,6 +2,8 @@
  * EtherCSS v0.0.8
  */
 
+ @charset "UTF-8";
+
 //
 // Sass Modules
 //
@@ -11,6 +13,7 @@
         'config',
         'base',
         'grid',
+        'grid-ext',
         'typography',
         'blockquotes',
         'buttons',
@@ -19,5 +22,5 @@
         'forms',
         'links',
         'lists';
-        //'tables',
+        'tables',
         //'utilities';
