@@ -1,5 +1,5 @@
 {
-  "block-indent": " ",
+  "block-indent": "  ",
   "always-semicolon": true,
   "color-case": "lower",
   "color-shorthand": true,
@@ -21,7 +21,7 @@
   "space-before-selector-delimiter": "",
   "space-before-closing-brace": "\n",
   "strip-spaces": true,
-  "tab-size": true,
+  "tab-size": 2,
   "unitless-zero": true,
   "vendor-prefix-align": true,
   "sort-order": [
