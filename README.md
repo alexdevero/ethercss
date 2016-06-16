@@ -7,14 +7,21 @@ _EtherCSS is currently in aplha stage_
 EtherCSS provides a minimal setup of styles for a fast and clean start of your project. It is designed specially for high performance and top productivity with fewer properties to reset. The result is much cleaner code and less weight. Hope you enjoy EtherCSS!
 
 <!--  Todo:
+## Features:
 - Small and powerful
 - lightweight and flexible
 - Easy to customize
 - Designed with love for code
--->
 
-<!-- 
 ## What makes EtherCSS different?
+
+## Why designers love EtherCSS?
+
+## Why designers love EtherCSS?
+
+## Brower support:
+| IE | Google Chrome | Mozzila Firefox | Safari |
+| --- |:------------:| ----------------:| ------:|
 -->
 
 ## Download
