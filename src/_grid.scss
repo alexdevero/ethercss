@@ -220,6 +220,8 @@
   width: 100%;
 }
 
+/* Mobile first queries - Content manipulation */
+
 .ether-xs-pull-0 {
   right: auto;
 }
@@ -441,6 +443,8 @@
   .ether-xm-12 {
     width: 100%;
   }
+
+  /* Screens 400px and up (larger than mobile) - Content manipulation */
 
   .ether-xm-pull-0 {
     right: auto;
@@ -666,6 +670,8 @@
     width: 100%;
   }
 
+  /* Screens 544px and up (larger than phablets) - Content manipulation */
+
   .ether-sm-pull-0 {
     right: auto;
   }
@@ -888,6 +894,8 @@
   .ether-md-12 {
     width: 100%;
   }
+
+  /* Screens 768px and up (larger than tablet) - Content manipulation */
 
   .ether-md-pull-0 {
     right: auto;
@@ -1112,6 +1120,8 @@
     width: 100%;
   }
 
+  /* Screens 992px and up (larger than desktop) - Content manipulation */
+
   .ether-lg-pull-0 {
     right: auto;
   }
@@ -1335,6 +1345,8 @@
     width: 100%;
   }
 
+  /* Screens 1200px and up (larger than HD desktop) - Content manipulation */
+
   .ether-xl-pull-0 {
     right: auto;
   }
@@ -1557,6 +1569,8 @@
   .ether-xxl-12 {
     width: 100%;
   }
+
+  /* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
 
   .ether-xxl-pull-0 {
     right: auto;
