@@ -19,8 +19,8 @@ button:-moz-focusring,
 
 button,
 html [type="button"],
-[type="reset"],
-[type="submit"] {
+html [type="reset"],
+html [type="submit"] {
   -webkit-appearance: button;
      -moz-appearance: button;
   line-height: 1;
@@ -28,9 +28,37 @@ html [type="button"],
   font: inherit;
 }
 
+/* reset
 button {
   overflow: visible;
   padding: 0;
   margin: 0;
   border: 0;
+}*/
+
+button  {
+  display: inline-block;
+  padding-top: remy(15px);
+  padding-right: remy(35px);
+  padding-bottom: remy(15px);
+  padding-left: remy(35px);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $color--primary;
+  border: 0;
+  border-radius: $radius--full;
+  cursor: pointer;
+
+  @include transition(background-color);
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: darken($color--primary, $fib--eight);
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
