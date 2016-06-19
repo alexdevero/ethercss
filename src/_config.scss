@@ -19,6 +19,21 @@ $color--tertiary: #f4f5f6;// Light grayish blue
 $color--accent: #f23a65;// Bright, strawberry, red
 $color--black: #111;// Very dark gray (mostly black)
 
+// Fibonacci sequence
+
+$fib--one: 0;
+$fib--two: 1;
+$fib--three: 1;
+$fib--four: 2;
+$fib--five: 3;
+$fib--six: 5;
+$fib--seven: 8;
+$fib--eight: 13;
+$fib--nine: 21;
+$fib--ten: 34;
+$fib--eleven: 55;
+$fib--twelve: 89;
+
 // Variables
 
 $breakpoint--typography: 640px;
