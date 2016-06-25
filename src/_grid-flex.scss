@@ -2,57 +2,57 @@
 // Grid system - Flexbox-based
 //
 
-.ether-container {
+.ether-container-flex {
   padding-right: .9375rem;
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
 }
 
-.ether-container::after {
+.ether-container-flex::after {
   display: table;
   clear: both;
   content: "";
 }
 
 @media (min-width: 544px) {
-  .ether-container {
+  .ether-container-flex {
     max-width: 576px;
   }
 }
 
 @media (min-width: 768px) {
-  .ether-container {
+  .ether-container-flex {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .ether-container {
+  .ether-container-flex {
     max-width: 940px;
   }
 }
 
 @media (min-width: 1200px) {
-  .ether-container {
+  .ether-container-flex {
     max-width: 1140px;
   }
 }
 
-.ether-container-full {
+.ether-container-flex-full {
   padding-right: .9375rem;
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
 }
 
-.ether-container-full::after {
+.ether-container-flex-full::after {
   display: table;
   clear: both;
   content: "";
 }
 
-.ether-row {
+.ether-row-flex {
   display: flex;
   flex-wrap: wrap;
   margin-right: -.9375rem;
