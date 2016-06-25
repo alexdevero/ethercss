@@ -22,8 +22,9 @@ EtherCSS provides a minimal setup of styles for a fast and clean start of your p
 ## What makes EtherCSS different?
 
 ## Brower support:
-| IE | Google Chrome | Mozzila Firefox | Safari |
-| +11 |: +45 :|  +45 :| +8.4 :|
+| IE     | Google Chrome  | Mozzila Firefox | Safari |
+|------- | -------------- | --------------- | ------ |
+| +11    |  +45           |  +45            | +8.4   |
 
 ## Download
 **Install with npm**
