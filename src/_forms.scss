@@ -102,14 +102,14 @@ textarea {
   border-radius: $radius--small;
 
   &:focus {
-    outline-color: $color--orange;
+    outline-color: $color--primary;
   }
 }
 
 [type="checkbox"] {
   position: relative;
   font: normal normal normal 14px/1 FontAwesome;
-  color: $color--orange;
+  color: $color--primary;
 }
 
 [type="checkbox"]:before {
@@ -143,7 +143,7 @@ textarea {
 [type="radio"] {
   position: relative;
   font: normal normal normal 14px/1 FontAwesome;
-  color: $color--orange;
+  color: $color--primary;
 }
 
 [type="radio"]:before,
@@ -170,7 +170,7 @@ textarea {
   margin: auto;
   width: 50%;
   height: 50%;
-  background: $color--orange;
+  background: $color--primary;
   border-radius: 50%;
   transform: scale(0);
 
