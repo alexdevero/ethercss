@@ -37,6 +37,9 @@ button {
 }*/
 
 button,
+html [type="button"],
+html [type="reset"],
+html [type="submit"],
 .btn  {
   display: inline-block;
   padding-top: remy(15px);
@@ -51,26 +54,26 @@ button,
   border-radius: $radius--full;
   cursor: pointer;
 
-  @include transition(background-color);
+  @include transition(all);
 
   &:focus,
   &:hover {
-    color: #fff;
-    background-color: darken($color--primary, $fib--eight);
+    color: lighten($color--black, $fib--ten);
+    border-color: darken($color--border, $fib--nine);
   }
 
   &:focus {
     outline: 0;
   }
+}
 
-  &--primary {
+.btn--primary {
+  color: #fff;
+  background-color: $color--primary;
+
+  &:focus,
+  &:hover {
     color: #fff;
-    background-color: $color--primary;
-
-    &:focus,
-    &:hover {
-      color: #fff;
-      background-color: darken($color--primary, $fib--eight);
-    }
+    background-color: darken($color--primary, $fib--eight);
   }
 }
