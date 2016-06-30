@@ -36,17 +36,18 @@ button {
   border: 0;
 }*/
 
-button  {
+button,
+.btn  {
   display: inline-block;
   padding-top: remy(15px);
   padding-right: remy(35px);
   padding-bottom: remy(15px);
   padding-left: remy(35px);
-  color: #fff;
+  color: $color--black;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $color--primary;
-  border: 0;
+  background-color: transparent;
+  border: 1px solid $color--border;
   border-radius: $radius--full;
   cursor: pointer;
 
@@ -60,5 +61,16 @@ button  {
 
   &:focus {
     outline: 0;
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: $color--primary;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+      background-color: darken($color--primary, $fib--eight);
+    }
   }
 }
