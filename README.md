@@ -4,22 +4,17 @@ CSS framework for the Web of tomorrow.
 _EtherCSS is currently at stage aplha and under testing._
 
 ## Why is EtherCSS awesome?
-EtherCSS provides a minimal setup of styles for a fast and clean start of your project. It is designed specially for high performance and top productivity with fewer properties to reset. The result is much cleaner code and less weight. Hope you enjoy EtherCSS!
+EtherCSS is lightweight and simple. It provides only minimal setup of styles for a fast and clean start of your project. It is designed specially for high performance and top productivity with fewer properties to reset. The result is much cleaner code and less weight. Hope you enjoy EtherCSS!
 
-## Why developers will love EtherCSS?
+## Why you will love EtherCSS?
 - small and powerful
 - lightweight and flexible
-- incredibly easy to customize
-- designed with love for clean code
-- ready for every screen size (even future ones)
-
-## Why designers will love EtherCSS?
+- easy to customize
 - flexible 12-column grid
 - flexible 24-column grid
 - contains only necessary styling
+- designed and developed with love for clean code
 - ready for every screen size (even future ones)
-
-## What makes EtherCSS different?
 
 ## Brower support:
 | IE    | Google Chrome  | Mozzila Firefox | Safari |
