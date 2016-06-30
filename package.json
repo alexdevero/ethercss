@@ -1,6 +1,6 @@
 {
   "name": "ethercss",
-  "version": "0.0.84",
+  "version": "0.0.85",
   "description": "Lightweight and flexible CSS framework for the Web of tomorrow.",
   "main": "index.js",
   "scripts": {
