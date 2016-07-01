@@ -10,35 +10,27 @@
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
-}
 
-.ether-container-ext::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-@media (min-width: 544px) {
-  .ether-container-ext {
-    max-width: 576px;
+  @media (min-width: 544px) {
+    max-width: remy(576px);
   }
-}
 
-@media (min-width: 768px) {
-  .ether-container-ext {
-    max-width: 720px;
+  @media (min-width: 768px) {
+    max-width: remy(720px);
   }
-}
 
-@media (min-width: 992px) {
-  .ether-container-ext {
-    max-width: 940px;
+  @media (min-width: 992px) {
+    max-width: remy(940px);
   }
-}
 
-@media (min-width: 1200px) {
-  .ether-container-ext {
-    max-width: 1140px;
+  @media (min-width: 1200px) {
+    max-width: remy(1140px);
+  }
+
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
   }
 }
 
@@ -47,23 +39,23 @@
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
-}
 
-.ether-container-ext-full::after {
-  display: table;
-  clear: both;
-  content: "";
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }
 
 .ether-row {
   margin-right: -.9375rem;
   margin-left: -.9375rem;
-}
 
-.ether-row::after {
-  display: table;
-  clear: both;
-  content: "";
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }
 
 /* Default column settings */
