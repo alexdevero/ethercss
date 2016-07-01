@@ -369,9 +369,11 @@
   .ether-xs-24 {
     width: 100%;
   }
+}
 
-  /* Mobile first queries - Content manipulation */
+/* Mobile first queries - Content manipulation */
 
+.ether-container-ext {
   .ether-xs-pull-0 {
     right: auto;
   }
@@ -531,8 +533,8 @@
 
 /* Screens 400px and up (larger than mobile) */
 
-.ether-container-ext {
-  @media (min-width: $screen--xm) {
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
     .ether-xm-1,
     .ether-xm-2,
     .ether-xm-3,
@@ -655,8 +657,12 @@
     .ether-xm-24 {
       width: 100%;
     }
+  }
+}
 
-    /* Screens 400px and up (larger than mobile) - Content manipulation */
+/* Screens 400px and up (larger than mobile) - Content manipulation */
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
 
     .ether-xm-pull-0 {
       right: auto;
@@ -816,11 +822,10 @@
   }
 }
 
-
 /* Screens 544px and up (larger than phablets) */
 
-.ether-container-ext {
-  @media (min-width: $screen--sm) {
+@media (min-width: $screen--sm) {
+  .ether-container-ext {
     .ether-sm-1,
     .ether-sm-2,
     .ether-sm-3,
@@ -943,9 +948,12 @@
     .ether-sm-24 {
       width: 100%;
     }
+  }
+}
 
-    /* Screens 544px and up (larger than phablets) - Content manipulation */
-
+/* Screens 544px and up (larger than phablets) - Content manipulation */
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
     .ether-sm-pull-0 {
       right: auto;
     }
@@ -1106,8 +1114,8 @@
 
 /* Screens 768px and up (larger than tablet) */
 
-.ether-container-ext {
-  @media (min-width: $screen--md) {
+@media (min-width: $screen--md) {
+  .ether-container-ext {
     .ether-md-1,
     .ether-md-2,
     .ether-md-3,
@@ -1230,9 +1238,13 @@
     .ether-md-24 {
       width: 100%;
     }
+  }
+}
 
-    /* Screens 768px and up (larger than tablet) - Content manipulation */
+/* Screens 768px and up (larger than tablet) - Content manipulation */
 
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
     .ether-md-pull-0 {
       right: auto;
     }
@@ -1393,8 +1405,8 @@
 
 /* Screens 992px and up (larger than desktop) */
 
-.ether-container-ext {
-  @media (min-width: $screen--lg) {
+@media (min-width: $screen--lg) {
+  .ether-container-ext {
     .ether-lg-1,
     .ether-lg-2,
     .ether-lg-3,
@@ -1517,9 +1529,13 @@
     .ether-lg-24 {
       width: 100%;
     }
+  }
+}
 
-    /* Screens 992px and up (larger than desktop) - Content manipulation */
+/* Screens 992px and up (larger than desktop) - Content manipulation */
 
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
     .ether-lg-pull-0 {
       right: auto;
     }
@@ -1680,8 +1696,8 @@
 
 /* Screens 1200px and up (larger than HD desktop) */
 
-.ether-container-ext {
-  @media (min-width: $screen--xl) {
+@media (min-width: $screen--xl) {
+  .ether-container-ext {
     .ether-xl-1,
     .ether-xl-2,
     .ether-xl-3,
@@ -1804,9 +1820,13 @@
     .ether-xl-24 {
       width: 100%;
     }
+  }
+}
 
-    /* Screens 1200px and up (larger than HD desktop) - Content manipulation */
+/* Screens 1200px and up (larger than HD desktop) - Content manipulation */
 
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
     .ether-xl-pull-0 {
       right: auto;
     }
@@ -1967,8 +1987,8 @@
 
 /* Screens 1440px and up (larger than ultra HD desktop) */
 
-.ether-container-ext {
-  @media (min-width: $screen--xxl) {
+@media (min-width: $screen--xxl) {
+  .ether-container-ext {
     .ether-xxl-1,
     .ether-xxl-2,
     .ether-xxl-3,
@@ -2091,9 +2111,13 @@
     .ether-xxl-24 {
       width: 100%;
     }
+  }
+}
 
-    /* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
+/* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
 
+@media (min-width: $screen--xm) {
+  .ether-container-ext {
     .ether-xxl-pull-0 {
       right: auto;
     }
