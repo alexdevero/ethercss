@@ -952,7 +952,7 @@
 }
 
 /* Screens 544px and up (larger than phablets) - Content manipulation */
-@media (min-width: $screen--xm) {
+@media (min-width: $screen--sm) {
   .ether-container-ext {
     .ether-sm-pull-0 {
       right: auto;
@@ -1243,7 +1243,7 @@
 
 /* Screens 768px and up (larger than tablet) - Content manipulation */
 
-@media (min-width: $screen--xm) {
+@media (min-width: $screen--md) {
   .ether-container-ext {
     .ether-md-pull-0 {
       right: auto;
@@ -1534,7 +1534,7 @@
 
 /* Screens 992px and up (larger than desktop) - Content manipulation */
 
-@media (min-width: $screen--xm) {
+@media (min-width: $screen--lg) {
   .ether-container-ext {
     .ether-lg-pull-0 {
       right: auto;
@@ -1825,7 +1825,7 @@
 
 /* Screens 1200px and up (larger than HD desktop) - Content manipulation */
 
-@media (min-width: $screen--xm) {
+@media (min-width: $screen--xl) {
   .ether-container-ext {
     .ether-xl-pull-0 {
       right: auto;
@@ -2116,7 +2116,7 @@
 
 /* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
 
-@media (min-width: $screen--xm) {
+@media (min-width: $screen--xxl) {
   .ether-container-ext {
     .ether-xxl-pull-0 {
       right: auto;
