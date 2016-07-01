@@ -42,10 +42,11 @@ html [type="reset"],
 html [type="submit"],
 .btn  {
   display: inline-block;
-  padding-top: remy(15px);
-  padding-right: remy(35px);
-  padding-bottom: remy(15px);
-  padding-left: remy(35px);
+  padding-top: remy(12px);
+  padding-right: remy(28px);
+  padding-bottom: remy(12px);
+  padding-left: remy(28px);
+  font-size: .85rem;
   color: $color--black;
   text-transform: uppercase;
   text-decoration: none;
