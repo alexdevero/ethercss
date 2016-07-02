@@ -1,8 +1,6 @@
 # EtherCSS
 CSS framework for the Web of tomorrow.
 
-_EtherCSS is currently at stage aplha and under testing._
-
 ## Why is EtherCSS awesome?
 EtherCSS is lightweight and simple. It provides only minimal setup of styles for a fast and clean start of your project. It is designed specially for high performance and top productivity with fewer properties to reset. The result is much cleaner code and less weight. Hope you enjoy EtherCSS!
 
@@ -21,6 +19,9 @@ EtherCSS is lightweight and simple. It provides only minimal setup of styles for
 | :---: | :------------: | :-------------: | :----: |
 |  +11  |  +45           |  +45            | +8.4   |
 
+## Demo:
+[View demo](http://ethercss.alexdevero.com/example/example.html)
+
 ## Download
 **Install with npm**
 ```sh
@@ -34,9 +35,9 @@ $ bower install ethercss
 ```
 -->
 
+<!-- 
 ## Table of Contents
-Comming soon
-<!-- Todo:
+Todo:
 - [Getting Started](https://github.com/alexdevero/EtherCSS#getting-started)
 - [Typography](https://github.com/alexdevero/EtherCSS#typography)
 - [Blockquotes](https://github.com/alexdevero/EtherCSS#blockquotes)
