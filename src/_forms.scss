@@ -84,13 +84,22 @@ textarea {
   outline-offset: remy(-2px);
 }
 
+select,
 [type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="color"],
 [type="email"],
+[type="month"],
 [type="number"],
 [type="password"],
-keygen,
-select,
+[type="range"],
+[type="search"],
+[type="tel"],
 [type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
 textarea {
   padding-top: remy(9px);
   padding-bottom: remy(9px);
