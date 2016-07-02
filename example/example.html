@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../dist/ethercss.css">
 
     <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="../dist/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="">
@@ -390,13 +390,13 @@
         <div class="docs-example docs-example-forms">
           <form>
             <div class="ether-row">
-              <div class="six columns">
+              <div class="ether-md-6">
                 <label for="exampleEmailInput">Your email</label>
 
                 <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
               </div>
 
-              <div class="six columns">
+              <div class="ether-md-6">
                 <label for="exampleRecipientInput">Reason for contacting</label>
 
                 <select class="u-full-width" id="exampleRecipientInput">
@@ -409,21 +409,37 @@
               </div>
             </div>
 
-            <label for="exampleMessage">Message</label>
+            <fieldset>
+              <label for="exampleMessage">Message</label>
 
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+              <textarea id="exampleMessage" placeholder="Hi Rimmer …"></textarea>
+            </fieldset>
 
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
+            <fieldset class="example-checkbox">
+              <label class="example-send-yourself-copy">
+                <input type="checkbox">
 
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
+                <span class="label-body">Send a copy to yourself</span>
+              </label>
+            </fieldset>
 
-            <label class="example-like-this">
-              <input type="radio">
+            <div class="example-radio">
+              <fieldset>
+                <label class="label-body" for="radio-like">
+                  <input id="radio-like" name="radio-btns" type="radio">
 
-              <span class="label-body">I like this</span>
-            </label>
+                  <span>I like this</span>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <label class="label-body" for="radio-love">
+                  <input id="radio-love" name="radio-btns" type="radio">
+
+                  <span>I love this</span>
+                </label>
+              </fieldset>
+            </div>
 
             <input class="button-primary" type="submit" value="Submit">
           </form>
