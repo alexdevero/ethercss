@@ -2,4 +2,26 @@
  * Custom CSS styes for example page
  */
 
-header {}
+/* Header */
+
+header {
+  display: none;
+}
+
+/* Grid example */
+
+.example-grid [class^="ether-md-"] {
+  margin-bottom: .75rem;
+  height: 32px;
+  font-size: .85rem;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.example-grid [class^="ether-md-"]:nth-of-type(n+2) {
+  border-left: 4px solid #fff;
+}
