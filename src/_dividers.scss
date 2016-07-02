@@ -7,23 +7,14 @@ hr {
   box-sizing: content-box;
   margin-top: remy(52px);
   margin-right: auto;
-  margin-bottom: remy(52px);
+  margin-bottom: remy(56px);
   margin-left: auto;
   overflow: visible;
-  color: #222;
-  width: remy(100px);
-  height: remy(26px);
-  background-size: 100% remy(26px);
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
-  border: 0;
+  border-width: 0;
+  border-top: 1px solid $color--border;
 
   @media screen and (min-width: $breakpoint--typography) {
     margin-top: remy(62px);
     margin-bottom: remy(62px);
-    height: remy(31px);
-  }
-  @media screen and (min-width: $breakpoint--typography) {
-    background-size: 100% remy(31px);
-    background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
   }
 }
