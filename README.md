@@ -14,15 +14,15 @@ EtherCSS is lightweight and simple. It provides only minimal setup of styles for
 - designed and developed with love for clean code
 - ready for every screen size (even future ones)
 
-## Brower support:
+### Demo:
+Take a look at EtherCSS [demo](http://ethercss.alexdevero.com/example/example.html).
+
+### Brower support:
 | IE    | Google Chrome  | Mozzila Firefox | Safari |
 | :---: | :------------: | :-------------: | :----: |
 |  +11  |  +45           |  +45            | +8.4   |
 
-## Demo:
-[View demo](http://ethercss.alexdevero.com/example/example.html)
-
-## Download
+### Download
 **Install with npm**
 ```sh
 $ npm install ethercss
@@ -36,7 +36,7 @@ $ bower install ethercss
 -->
 
 <!-- 
-## Table of Contents
+### Table of Contents
 Todo:
 - [Getting Started](https://github.com/alexdevero/EtherCSS#getting-started)
 - [Typography](https://github.com/alexdevero/EtherCSS#typography)
@@ -52,8 +52,8 @@ Todo:
 - [Browser Support](https://github.com/alexdevero/EtherCSS#browser-support)
 - [Examples](https://github.com/alexdevero/EtherCSS#examples) -->
 
-## Contributing
+### Contributing
 Want to contribute? Follow these [recommendations](https://github.com/alexdevero/EtherCSS/blob/master/contributing.md).
 
-## License
+### License
 Designed by [Alex Devero](http://www.alexdevero.com). Licensed under the [MIT License](https://github.com/alexdevero/EtherCSS/blob/master/LICENSE.md).
