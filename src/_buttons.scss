@@ -47,7 +47,7 @@ button,
   padding-bottom: remy(12px);
   padding-left: remy(28px);
   margin-bottom: 1rem;
-  font-size: .85rem;
+  font-size: .75rem;
   color: $color--black;
   line-height: 1.382;
   text-decoration: none;
@@ -76,11 +76,12 @@ button,
 .btn--primary {
   color: #fff;
   background-color: $color--primary;
-  border: 0;
+  border-color: $color--primary;
 
   &:focus,
   &:hover {
     color: #fff;
     background-color: darken($color--primary, $fib--eight);
+    border-color: darken($color--primary, $fib--eight);
   }
 }
