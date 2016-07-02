@@ -379,7 +379,7 @@
                 <fieldset>
                   <label for="exampleEmailInput">Your email</label>
 
-                  <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                  <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
                 </fieldset>
               </div>
 
@@ -387,7 +387,7 @@
                 <fieldset>
                   <label for="exampleRecipientInput">Reason for contacting</label>
 
-                  <select class="u-full-width" id="exampleRecipientInput">
+                  <select id="exampleRecipientInput">
                     <option value="questions">Question</option>
 
                     <option value="admiration">Congratulation</option>
@@ -419,14 +419,6 @@
                     <option value="Safari">
                   </datalist>
                 </fieldset>
-              </div>
-
-              <div class="ether-md-6">
-                  <fieldset>
-                    <label for="security">Encryption</label>
-
-                    <keygen name="security">
-                  </fieldset>
               </div>
             </div>
 
@@ -476,7 +468,7 @@
       &lt;fieldset&gt;
         &lt;label for="exampleEmailInput"&gt;Your email&lt;/label&gt;
 
-        &lt;input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
+        &lt;input type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
       &lt;/fieldset&gt;
     &lt;/div&gt;
 
@@ -484,7 +476,7 @@
       &lt;fieldset&gt;
         &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
 
-        &lt;select class="u-full-width" id="exampleRecipientInput"&gt;
+        &lt;select id="exampleRecipientInput"&gt;
           &lt;option value="questions"&gt;Question&lt;/option&gt;
 
           &lt;option value="admiration"&gt;Congratulation&lt;/option&gt;
@@ -516,14 +508,6 @@
           &lt;option value="Safari"&gt;
         &lt;/datalist&gt;
       &lt;/fieldset&gt;
-    &lt;/div&gt;
-
-    &lt;div class="ether-md-6"&gt;
-        &lt;fieldset&gt;
-          &lt;label for="security"&gt;Encryption&lt;/label&gt;
-
-          &lt;keygen name="security"&gt;
-        &lt;/fieldset&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -663,7 +647,7 @@
         <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
 
         <div class="docs-example">
-          <table class="u-full-width">
+          <table>
             <thead>
               <tr>
                 <th>Name</th>
@@ -675,17 +659,17 @@
 
             <tbody>
               <tr>
-                <td>Dave Gamache</td>
-                <td>26</td>
+                <td>Tony Stark</td>
+                <td>42</td>
                 <td>Male</td>
-                <td>San Francisco</td>
+                <td>New York</td>
               </tr>
 
               <tr>
-                <td>Dwayne Johnson</td>
-                <td>42</td>
+                <td>Sherock Holmes</td>
+                <td>47</td>
                 <td>Male</td>
-                <td>Hayward</td>
+                <td>London</td>
               </tr>
             </tbody>
           </table>
@@ -693,7 +677,7 @@
 
 <pre class="code-example">
 <code class="code-example-body prettyprint">
-&lt;table class="u-full-width"&gt;
+&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Name&lt;/th&gt;
@@ -705,17 +689,17 @@
 
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Dave Gamache&lt;/td&gt;
-      &lt;td&gt;26&lt;/td&gt;
+      &lt;td&gt;Tony Stark&lt;/td&gt;
+      &lt;td&gt;42&lt;/td&gt;
       &lt;td&gt;Male&lt;/td&gt;
-      &lt;td&gt;San Francisco&lt;/td&gt;
+      &lt;td&gt;New York&lt;/td&gt;
     &lt;/tr&gt;
 
     &lt;tr&gt;
-      &lt;td&gt;Dwayne Johnson&lt;/td&gt;
-      &lt;td&gt;42&lt;/td&gt;
+      &lt;td&gt;Sherock Holmes&lt;/td&gt;
+      &lt;td&gt;47&lt;/td&gt;
       &lt;td&gt;Male&lt;/td&gt;
-      &lt;td&gt;Hayward&lt;/td&gt;
+      &lt;td&gt;London&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -732,17 +716,19 @@
         <div class="docs-example ether-row">
           <div class="ether-md-6">
             <ul>
+              <li><strong>Desktop Ultra HD (TV)</strong>: 1440px</li>
+
               <li><strong>Desktop HD</strong>: 1200px</li>
 
-              <li><strong>Desktop</strong>: 1000px</li>
-
-              <li><strong>Tablet</strong>: 750px</li>
+              <li><strong>Desktop</strong>: 992px</li>
             </ul>
           </div>
 
           <div class="ether-md-6">
             <ul>
-              <li><strong>Phablet</strong>: 550px</li>
+              <li><strong>Tablet</strong>: 768px</li>
+
+              <li><strong>Phablet</strong>: 544px</li>
 
               <li><strong>Mobile</strong>: 400px</li>
             </ul>
@@ -803,6 +789,10 @@ $screen--xxl: 1440px;
 </code>
 </pre>
       </div>
+
+      <hr>
+
+      <p>Thank you for your wonderful feedback and generous support.</p>
     </div>
 
     <!-- Scripts -->
