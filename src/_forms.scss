@@ -125,6 +125,7 @@ textarea {
   background: #fff;
   border: 1px solid $color--border;
   border-radius: $radius--small;
+  transform: scale(1.05);
 }
 
 [type="checkbox"]:after {
