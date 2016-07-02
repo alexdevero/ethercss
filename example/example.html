@@ -143,7 +143,7 @@
 
           <!-- Why use EtherCSS -->
           <section class="docs-section section--" id="intro">
-            <h6 class="docs-header">Is EtherCSS for you?</h6>
+            <h3 class="docs-header">Is EtherCSS for you?</h3>
 
             <p>You should use EtherCSS if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. EtherCSS only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on EtherCSS and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
 
@@ -152,7 +152,7 @@
 
           <!-- Grid -->
           <section class="docs-section section--grid" id="grid">
-            <h6 class="docs-header">The grid</h6>
+            <h3 class="docs-header">The grid</h3>
 
             <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
 
@@ -254,7 +254,7 @@
 
           <!-- Typography -->
           <section class="docs-section section--" id="typography">
-            <h6 class="docs-header">Typography</h6>
+            <h3 class="docs-header">Typography</h3>
 
             <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, EtherCSS never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
 
@@ -335,12 +335,14 @@
 
           <!-- Buttons -->
           <section class="docs-section section--" id="buttons">
-            <h6 class="docs-header">Buttons</h6>
+            <h3 class="docs-header">Buttons</h3>
 
             <p>Buttons come in two basic flavors in EtherCSS. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
 
             <div class="docs-example">
               <div>
+                <h4>Default buttons</h4>
+
                 <a class="btn" href="#">Anchor button</a>
 
                 <button>Button element</button>
@@ -351,6 +353,8 @@
               </div>
 
               <div>
+                <h4>Primary buttons</h4>
+
                 <a class="btn btn--primary" href="#">Anchor button</a>
 
                 <button class="btn--primary">Button element</button>
@@ -358,6 +362,42 @@
                 <input class="btn--primary" type="submit" value="submit input">
 
                 <input class="btn--primary" type="button" value="button input">
+              </div>
+
+              <div>
+                <h4>Secondary buttons</h4>
+
+                <a class="btn btn--secondary" href="#">Anchor button</a>
+
+                <button class="btn--secondary">Button element</button>
+
+                <input class="btn--secondary" type="submit" value="submit input">
+
+                <input class="btn--secondary" type="button" value="button input">
+              </div>
+
+              <div>
+                <h4>Alert buttons</h4>
+
+                <a class="btn btn--alert" href="#">Anchor button</a>
+
+                <button class="btn--alert">Button element</button>
+
+                <input class="btn--alert" type="submit" value="submit input">
+
+                <input class="btn--alert" type="button" value="button input">
+              </div>
+
+              <div>
+                <h4>Disabled buttons</h4>
+
+                <a class="btn btn--disabled" href="#">Anchor button</a>
+
+                <button class="btn--disabled">Button element</button>
+
+                <input class="btn--disabled" type="submit" value="submit input">
+
+                <input class="btn--disabled" type="button" value="button input">
               </div>
             </div>
 
@@ -388,7 +428,7 @@
 
           <!-- Forms -->
           <section class="docs-section section--" id="forms">
-            <h6 class="docs-header">Forms</h6>
+            <h3 class="docs-header">Forms</h3>
 
             <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
 
@@ -397,17 +437,35 @@
                 <div class="ether-row">
                   <div class="ether-md-6">
                     <fieldset>
-                      <label for="exampleEmailInput">Your email</label>
+                      <label for="exampleNameInput">Name</label>
 
-                      <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                      <input type="text" placeholder="Tony Stark" id="exampleNameInput">
                     </fieldset>
                   </div>
 
                   <div class="ether-md-6">
                     <fieldset>
-                      <label for="exampleRecipientInput">Reason for contacting</label>
+                      <label for="exampleEmailInput">Email</label>
 
-                      <select id="exampleRecipientInput">
+                      <input type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="ether-row">
+                  <div class="ether-md-6">
+                    <fieldset>
+                      <label for="examplePhoneInput">Phone</label>
+
+                      <input type="tel" placeholder="999 888 777" id="examplePhoneInput">
+                    </fieldset>
+                  </div>
+
+                  <div class="ether-md-6">
+                    <fieldset>
+                      <label for="exampleSelect">Select</label>
+
+                      <select id="exampleSelect">
                         <option value="questions">Question</option>
 
                         <option value="admiration">Congratulation</option>
@@ -421,7 +479,7 @@
                 <div class="ether-row">
                   <div class="ether-md-6">
                     <fieldset>
-                      <label for="browsersList">Supported Browsers</label>
+                      <label for="browsersList">Datalist</label>
 
                       <input id="browsersList" list="browsers" type="text" placeholder="Supported Browsers">
 
@@ -438,6 +496,32 @@
 
                         <option value="Safari">
                       </datalist>
+                    </fieldset>
+                  </div>
+
+                  <div class="ether-md-6">
+                    <fieldset>
+                      <label for="examplePasswordInput">Password</label>
+
+                      <input id="examplePasswordInput" type="password" placeholder="*******">
+                    </fieldset>
+                  </div>
+                </div>
+
+                <div class="ether-row">
+                  <div class="ether-md-6">
+                    <fieldset>
+                      <label for="exampleDateInput">Date</label>
+
+                      <input id="exampleDateInput" type="date">
+                    </fieldset>
+                  </div>
+
+                  <div class="ether-md-6">
+                    <fieldset>
+                      <label for="examplerangeInput">Range</label>
+
+                      <input id="examplerangeInput" type="range" placeholder="">
                     </fieldset>
                   </div>
                 </div>
@@ -486,17 +570,35 @@
   &lt;div class="ether-row"&gt;
     &lt;div class="ether-md-6"&gt;
       &lt;fieldset&gt;
-        &lt;label for="exampleEmailInput"&gt;Your email&lt;/label&gt;
+        &lt;label for="exampleNameInput"&gt;Name&lt;/label&gt;
 
-        &lt;input type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
+        &lt;input type="text" placeholder="Tony Stark" id="exampleNameInput"&gt;
       &lt;/fieldset&gt;
     &lt;/div&gt;
 
     &lt;div class="ether-md-6"&gt;
       &lt;fieldset&gt;
-        &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
+        &lt;label for="exampleEmailInput"&gt;Email&lt;/label&gt;
 
-        &lt;select id="exampleRecipientInput"&gt;
+        &lt;input type="email" placeholder="test@mailbox.com" id="exampleEmailInput"&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="ether-row"&gt;
+    &lt;div class="ether-md-6"&gt;
+      &lt;fieldset&gt;
+        &lt;label for="examplePhoneInput"&gt;Phone&lt;/label&gt;
+
+        &lt;input type="tel" placeholder="999 888 777" id="examplePhoneInput"&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+
+    &lt;div class="ether-md-6"&gt;
+      &lt;fieldset&gt;
+        &lt;label for="exampleSelect"&gt;Select&lt;/label&gt;
+
+        &lt;select id="exampleSelect"&gt;
           &lt;option value="questions"&gt;Question&lt;/option&gt;
 
           &lt;option value="admiration"&gt;Congratulation&lt;/option&gt;
@@ -510,7 +612,7 @@
   &lt;div class="ether-row"&gt;
     &lt;div class="ether-md-6"&gt;
       &lt;fieldset&gt;
-        &lt;label for="browsersList"&gt;Supported Browsers&lt;/label&gt;
+        &lt;label for="browsersList"&gt;Datalist&lt;/label&gt;
 
         &lt;input id="browsersList" list="browsers" type="text" placeholder="Supported Browsers"&gt;
 
@@ -527,6 +629,32 @@
 
           &lt;option value="Safari"&gt;
         &lt;/datalist&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+
+    &lt;div class="ether-md-6"&gt;
+      &lt;fieldset&gt;
+        &lt;label for="examplePasswordInput"&gt;Password&lt;/label&gt;
+
+        &lt;input id="examplePasswordInput" type="password" placeholder="*******"&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="ether-row"&gt;
+    &lt;div class="ether-md-6"&gt;
+      &lt;fieldset&gt;
+        &lt;label for="exampleDateInput"&gt;Date&lt;/label&gt;
+
+        &lt;input id="exampleDateInput" type="date"&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+
+    &lt;div class="ether-md-6"&gt;
+      &lt;fieldset&gt;
+        &lt;label for="examplerangeInput"&gt;Range&lt;/label&gt;
+
+        &lt;input id="examplerangeInput" type="range" placeholder=""&gt;
       &lt;/fieldset&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -574,7 +702,7 @@
 
           <!-- Lists -->
           <section class="docs-section section--" id="lists">
-            <h6 class="docs-header">Lists</h6>
+            <h3 class="docs-header">Lists</h3>
 
             <div class="ether-row docs-example">
               <div class="ether-md-6">
@@ -635,7 +763,7 @@
           </section>
 
           <section class="docs-section section--" id="code">
-            <h6 class="docs-header">Code</h6>
+            <h3 class="docs-header">Code</h3>
 
             <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
 
@@ -663,7 +791,7 @@ including indentation in your code --&gt;
 
           <!-- Tables -->
           <section class="docs-section section--" id="tables">
-            <h6 class="docs-header">Tables</h6>
+            <h3 class="docs-header">Tables</h3>
 
             <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
 
@@ -748,7 +876,7 @@ including indentation in your code --&gt;
 
           <!-- Queries -->
           <section class="docs-section section--" id="queries">
-            <h6 class="docs-header">Media queries</h6>
+            <h3 class="docs-header">Media queries</h3>
 
             <p>EtherCSS uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how EtherCSS's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
 
@@ -807,7 +935,7 @@ $screen--xxl: 1440px;
 
           <!-- Utilities and Misc. -->
           <section class="docs-section section--" id="utilities">
-            <h6 class="docs-header">Utilities</h6>
+            <h3 class="docs-header">Utilities</h3>
 
             <p>EtherCSS has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
 
