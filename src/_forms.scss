@@ -88,6 +88,7 @@ textarea {
 [type="email"],
 [type="number"],
 [type="password"],
+keygen,
 select,
 [type="text"],
 textarea {
@@ -97,6 +98,7 @@ textarea {
   padding-left: remy(9px);
   margin-bottom: remy(18px);
   width: 100%;
+  min-height: remy(45px);
   font-family: inherit;
   border: 1px solid $color--border;
   border-radius: $radius--small;
