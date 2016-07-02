@@ -10,11 +10,9 @@ html {
   font-size: 100%;
   color: $color--black;
 
-  @media screen and (min-width: $breakpoint--typography) {
-    html {
-      font-size: 18px;
-    }
-  }
+  /*@media screen and (min-width: $breakpoint--typography) {
+    font-size: 18px;
+  }*/
 }
 
 // Default body styles
@@ -24,81 +22,89 @@ body {
   line-height: 1.6;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
 h1 {
-  margin-top: remy(104px);
+  //margin-top: remy(104px);
   margin-bottom: remy(26px);
   font-size: remy(40px);
   line-height: remy(52px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(124px);
+    //margin-top: remy(124px);
     margin-bottom: remy(31px);
     line-height: remy(62px);
   }
 }
 
 h2 {
-  margin-top: remy(65px);
+  //margin-top: remy(65px);
   margin-bottom: remy(13px);
   font-size: remy(27px);
   line-height: remy(39px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(77.5px);
+    //margin-top: remy(77.5px);
     margin-bottom: remy(15.5px);
     line-height: remy(46.5px);
   }
 }
 
 h3 {
-  margin-top: remy(52px);
+  //margin-top: remy(52px);
   margin-bottom: remy(13px);
   font-size: remy(22px);
   line-height: remy(26px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(62px);
+    //margin-top: remy(62px);
     margin-bottom: remy(15.5px);
     line-height: remy(31px);
   }
 }
 
 h4 {
-  margin-top: remy(39px);
+  //margin-top: remy(39px);
   margin-bottom: remy(13px);
   font-size: remy(19.2px);
   line-height: remy(26px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(46.5px);
+    //margin-top: remy(46.5px);
     margin-bottom: remy(15.5px);
     line-height: remy(31px);
   }
 }
 
 h5 {
-  margin-top: remy(65px);
+  //margin-top: remy(65px);
   margin-bottom: remy(13px);
   font-size: remy(16px);
   line-height: remy(26px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(77.5px);
+    //margin-top: remy(77.5px);
     margin-bottom: remy(15.5px);
     line-height: remy(31px);
   }
 }
 
 h6 {
-  margin-top: remy(65px);
+  //margin-top: remy(65px);
   margin-bottom: remy(13px);
-  font-size: remy(16px);
-  font-style: italic;
+  font-size: remy(14px);
   font-weight: normal;
   line-height: remy(26px);
 
   @media screen and (min-width: $breakpoint--typography) {
-    margin-top: remy(77.5px);
+    //margin-top: remy(77.5px);
     margin-bottom: remy(15.5px);
     line-height: remy(31px);
   }
@@ -148,7 +154,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 cite {
