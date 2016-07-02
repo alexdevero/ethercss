@@ -391,21 +391,57 @@
           <form>
             <div class="ether-row">
               <div class="ether-md-6">
-                <label for="exampleEmailInput">Your email</label>
-
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                <fieldset>
+                  <label for="exampleEmailInput">Your email</label>
+                  
+                  <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                </fieldset>
               </div>
 
               <div class="ether-md-6">
-                <label for="exampleRecipientInput">Reason for contacting</label>
+                <fieldset>
+                  <label for="exampleRecipientInput">Reason for contacting</label>
+                  
+                  <select class="u-full-width" id="exampleRecipientInput">
+                    <option value="questions">Question</option>
+                  
+                    <option value="admiration">Congratulation</option>
+                  
+                    <option value="number">Can I get your number?</option>
+                  </select>
+                </fieldset>
+              </div>
+            </div>
 
-                <select class="u-full-width" id="exampleRecipientInput">
-                  <option value="Option 1">Questions</option>
+            <div class="ether-row">
+              <div class="ether-md-6">
+                <fieldset>
+                  <label for="browsersList">Supported Browsers</label>
 
-                  <option value="Option 2">Admiration</option>
+                  <input id="browsersList" list="browsers" type="text" placeholder="Supported Browsers">
 
-                  <option value="Option 3">Can I get your number?</option>
-                </select>
+                  <datalist id="browsers">
+                    <option value="Chrome">
+
+                    <option value="Edge">
+
+                    <option value="Firefox">
+
+                    <option value="Internet Explorer">
+
+                    <option value="Opera">
+
+                    <option value="Safari">
+                  </datalist> 
+                </fieldset>
+              </div>
+
+              <div class="ether-md-6">
+                  <fieldset>
+                    <label for="security">Encryption</label>
+
+                    <keygen name="security">
+                  </fieldset>
               </div>
             </div>
 
