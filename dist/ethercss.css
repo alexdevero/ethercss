@@ -1,5 +1,5 @@
 /**
- * EtherCSS v0.0.85
+ * EtherCSS v0.0.88
  */
 /**
  * Base
@@ -5165,11 +5165,9 @@ html {
   font-size: 16px;
   font-size: 100%;
   color: #111;
-}
-@media screen and (min-width: 640px) {
-  html html {
+  /*@media screen and (min-width: $breakpoint--typography) {
     font-size: 18px;
-  }
+  }*/
 }
 
 body {
@@ -5177,87 +5175,83 @@ body {
   line-height: 1.6;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
 h1 {
-  margin-top: 6.5rem;
   margin-bottom: 1.625rem;
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
 @media screen and (min-width: 640px) {
   h1 {
-    margin-top: 7.75rem;
     margin-bottom: 1.9375rem;
     line-height: 3.875rem;
   }
 }
 
 h2 {
-  margin-top: 4.0625rem;
   margin-bottom: .8125rem;
   font-size: 1.6875rem;
   line-height: 2.4375rem;
 }
 @media screen and (min-width: 640px) {
   h2 {
-    margin-top: 4.84375rem;
     margin-bottom: .96875rem;
     line-height: 2.90625rem;
   }
 }
 
 h3 {
-  margin-top: 3.25rem;
   margin-bottom: .8125rem;
   font-size: 1.375rem;
   line-height: 1.625rem;
 }
 @media screen and (min-width: 640px) {
   h3 {
-    margin-top: 3.875rem;
     margin-bottom: .96875rem;
     line-height: 1.9375rem;
   }
 }
 
 h4 {
-  margin-top: 2.4375rem;
   margin-bottom: .8125rem;
   font-size: 1.2rem;
   line-height: 1.625rem;
 }
 @media screen and (min-width: 640px) {
   h4 {
-    margin-top: 2.90625rem;
     margin-bottom: .96875rem;
     line-height: 1.9375rem;
   }
 }
 
 h5 {
-  margin-top: 4.0625rem;
   margin-bottom: .8125rem;
   font-size: 1rem;
   line-height: 1.625rem;
 }
 @media screen and (min-width: 640px) {
   h5 {
-    margin-top: 4.84375rem;
     margin-bottom: .96875rem;
     line-height: 1.9375rem;
   }
 }
 
 h6 {
-  margin-top: 4.0625rem;
   margin-bottom: .8125rem;
-  font-size: 1rem;
-  font-style: italic;
+  font-size: .875rem;
   font-weight: normal;
   line-height: 1.625rem;
 }
 @media screen and (min-width: 640px) {
   h6 {
-    margin-top: 4.84375rem;
     margin-bottom: .96875rem;
     line-height: 1.9375rem;
   }
@@ -5311,7 +5305,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 cite {
@@ -5419,11 +5413,11 @@ button:-moz-focusring,
 }
 
 button,
-html [type="button"],
-html [type="reset"],
-html [type="submit"] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
-  font: inherit; 
+  font: inherit;
   line-height: 1;
   text-transform: uppercase;
 
@@ -5438,19 +5432,23 @@ button {
   border: 0;
 }*/
 button,
-html [type="button"],
-html [type="reset"],
-html [type="submit"],
+[type="button"],
+[type="reset"],
+[type="submit"],
 .btn {
   display: inline-block;
   padding-top: .75rem;
   padding-right: 1.75rem;
   padding-bottom: .75rem;
   padding-left: 1.75rem;
+  margin-bottom: 1rem;
   font-size: .85rem;
   color: #111;
+  line-height: 1.382;
   text-decoration: none;
+  letter-spacing: .1rem;
   text-transform: uppercase;
+  white-space: nowrap;
   background-color: transparent;
   border: 1px solid #d9d9d9;
   border-radius: 62.5rem;
@@ -5459,21 +5457,21 @@ html [type="submit"],
 }
 button:focus,
 button:hover,
-html [type="button"]:focus,
-html [type="button"]:hover,
-html [type="reset"]:focus,
-html [type="reset"]:hover,
-html [type="submit"]:focus,
-html [type="submit"]:hover,
+[type="button"]:focus,
+[type="button"]:hover,
+[type="reset"]:focus,
+[type="reset"]:hover,
+[type="submit"]:focus,
+[type="submit"]:hover,
 .btn:focus,
 .btn:hover {
   color: #686868;
   border-color: #a3a3a3;
 }
 button:focus,
-html [type="button"]:focus,
-html [type="reset"]:focus,
-html [type="submit"]:focus,
+[type="button"]:focus,
+[type="reset"]:focus,
+[type="submit"]:focus,
 .btn:focus {
   outline: 0;
 }
@@ -5481,6 +5479,7 @@ html [type="submit"]:focus,
 .btn--primary {
   color: #fff;
   background-color: #00b4ff;
+  border: 0;
 }
 .btn--primary:focus,
 .btn--primary:hover {
@@ -5499,6 +5498,7 @@ pre {
 }
 
 code {
+  overflow: auto; 
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-family: monospace, monospace;
@@ -5523,26 +5523,15 @@ hr {
   box-sizing: content-box;
   margin-top: 3.25rem;
   margin-right: auto;
-  margin-bottom: 3.25rem;
+  margin-bottom: 3.5rem;
   margin-left: auto;
-  width: 6.25rem;
-  height: 1.625rem;
-  color: #222;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
-  background-size: 100% 1.625rem;
-  border: 0;
+  border-width: 0;
+  border-top: 1px solid #d9d9d9;
 }
 @media screen and (min-width: 640px) {
   hr {
     margin-top: 3.875rem;
     margin-bottom: 3.875rem;
-    height: 1.9375rem;
-  }
-}
-@media screen and (min-width: 640px) {
-  hr {
-    background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px); 
-    background-size: 100% 1.9375rem;
   }
 }
 
@@ -5634,6 +5623,7 @@ textarea {
 [type="email"],
 [type="number"],
 [type="password"],
+keygen,
 select,
 [type="text"],
 textarea {
@@ -5643,6 +5633,7 @@ textarea {
   padding-left: .5625rem;
   margin-bottom: 1.125rem;
   width: 100%;
+  min-height: 2.8125rem;
   font-family: inherit;
   border: 1px solid #d9d9d9;
   border-radius: .25rem;
@@ -5651,6 +5642,7 @@ textarea {
 [type="email"]:focus,
 [type="number"]:focus,
 [type="password"]:focus,
+keygen:focus,
 select:focus,
 [type="text"]:focus,
 textarea:focus {
@@ -5674,6 +5666,7 @@ textarea:focus {
   background: #fff;
   border: 1px solid #d9d9d9;
   border-radius: .25rem;
+  transform: scale(1.05);
 }
 
 [type="checkbox"]:after {
@@ -5797,9 +5790,24 @@ table {
   border-collapse: collapse;
 }
 
-td,
-th {
-  padding: 0;
+th,
+td {
+  padding-top: .75rem;
+  padding-right: .9375rem;
+  padding-bottom: .75rem;
+  padding-left: .9375rem;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
 }
 
 /**
