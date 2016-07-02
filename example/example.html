@@ -149,7 +149,7 @@
       </section>
 
       <!-- Grid -->
-      <section class="docs-section section--" id="grid">
+      <section class="docs-section section--grid" id="grid">
         <h6 class="docs-header">The grid</h6>
 
         <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
@@ -259,23 +259,23 @@
         <div class="docs-example">
           <div class="ether-row">
             <div class="ether-md-6">
-              <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+              <p><strong>The typography base</strong> is cross-browser compatible sans-serif, set at 1rem (16px) over a 1.6 line height (25.6px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all also included.</p>
 
               <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
             </div>
 
             <div class="ether-md-6">
-              <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+              <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 2.5rem</span></h1>
 
-              <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+              <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 1.6875rem</span></h2>
 
-              <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+              <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 1.375rem</span></h3>
 
-              <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+              <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 1.2rem</span></h4>
 
-              <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+              <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 1rem</span></h5>
 
-              <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+              <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> .875rem</span></h6>
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@
 
         <div class="docs-example">
           <div>
-            <a class="button" href="#">Anchor button</a>
+            <a class="btn" href="#">Anchor button</a>
 
             <button>Button element</button>
 
@@ -331,13 +331,13 @@
           </div>
 
           <div>
-            <a class="button button-primary" href="#">Anchor button</a>
+            <a class="btn btn--primary" href="#">Anchor button</a>
 
-            <button class="button-primary">Button element</button>
+            <button class="btn--primary">Button element</button>
 
-            <input class="button-primary" type="submit" value="submit input">
+            <input class="btn--primary" type="submit" value="submit input">
 
-            <input class="button-primary" type="button" value="button input">
+            <input class="btn--primary" type="button" value="button input">
           </div>
         </div>
 
@@ -556,7 +556,7 @@
       <section class="docs-section section--" id="lists">
         <h6 class="docs-header">Lists</h6>
 
-        <div class="row docs-example">
+        <div class="ether-row docs-example">
           <div class="ether-md-6">
             <ul>
               <li>Unordered lists have basic styles</li>
