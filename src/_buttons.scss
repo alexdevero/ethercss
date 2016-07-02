@@ -85,3 +85,41 @@ button,
     border-color: darken($color--primary, $fib--eight);
   }
 }
+
+.btn--secondary {
+  color: #fff;
+  background-color: $color--secondary;
+  border-color: $color--secondary;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: darken($color--secondary, $fib--eight);
+  }
+}
+
+.btn--alert {
+  color: #fff;
+  background-color: $color--accent;
+  border-color: $color--accent;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    border-color: darken($color--accent, $fib--eight);
+  }
+}
+
+.btn--disabled {
+  color: #fff;
+  background-color: $color--border;
+  border-color: $color--border;
+  cursor: default;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: $color--border;
+    border-color: $color--border;
+  }
+}
