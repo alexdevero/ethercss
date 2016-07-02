@@ -18,14 +18,14 @@ button:-moz-focusring,
 }
 
 button,
-html [type="button"],
-html [type="reset"],
-html [type="submit"] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
-     -moz-appearance: button;
+  font: inherit;
   line-height: 1;
   text-transform: uppercase;
-  font: inherit;
+     -moz-appearance: button;
 }
 
 /* reset
@@ -37,19 +37,23 @@ button {
 }*/
 
 button,
-html [type="button"],
-html [type="reset"],
-html [type="submit"],
-.btn  {
+[type="button"],
+[type="reset"],
+[type="submit"],
+.btn {
   display: inline-block;
   padding-top: remy(12px);
   padding-right: remy(28px);
   padding-bottom: remy(12px);
   padding-left: remy(28px);
+  margin-bottom: 1rem;
   font-size: .85rem;
   color: $color--black;
-  text-transform: uppercase;
+  line-height: 1.382;
   text-decoration: none;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
   background-color: transparent;
   border: 1px solid $color--border;
   border-radius: $radius--full;
@@ -68,9 +72,11 @@ html [type="submit"],
   }
 }
 
+
 .btn--primary {
   color: #fff;
   background-color: $color--primary;
+  border: 0;
 
   &:focus,
   &:hover {
