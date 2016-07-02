@@ -1,5 +1,5 @@
 /**
- * EtherCSS v0.0.88
+ * EtherCSS v0.0.89
  */
 /**
  * Base
@@ -5442,7 +5442,7 @@ button,
   padding-bottom: .75rem;
   padding-left: 1.75rem;
   margin-bottom: 1rem;
-  font-size: .85rem;
+  font-size: .75rem;
   color: #111;
   line-height: 1.382;
   text-decoration: none;
@@ -5479,12 +5479,48 @@ button:focus,
 .btn--primary {
   color: #fff;
   background-color: #00b4ff;
-  border: 0;
+  border-color: #00b4ff;
 }
 .btn--primary:focus,
 .btn--primary:hover {
   color: #fff;
   background-color: #0085bd;
+  border-color: #0085bd;
+}
+
+.btn--secondary {
+  color: #fff;
+  background-color: #556270;
+  border-color: #556270;
+}
+.btn--secondary:focus,
+.btn--secondary:hover {
+  color: #fff;
+  background-color: #38414a;
+}
+
+.btn--alert {
+  color: #fff;
+  background-color: #f23a65;
+  border-color: #f23a65;
+}
+.btn--alert:focus,
+.btn--alert:hover {
+  color: #fff;
+  border-color: #db0e3e;
+}
+
+.btn--disabled {
+  color: #fff;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+  cursor: default;
+}
+.btn--disabled:focus,
+.btn--disabled:hover {
+  color: #fff;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
 }
 
 /**
@@ -5619,13 +5655,22 @@ textarea {
   outline-offset: -.125rem;
 }
 
+select,
 [type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="color"],
 [type="email"],
+[type="month"],
 [type="number"],
 [type="password"],
-keygen,
-select,
+[type="range"],
+[type="search"],
+[type="tel"],
 [type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
 textarea {
   padding-top: .5625rem;
   padding-right: .5625rem;
@@ -5638,13 +5683,22 @@ textarea {
   border: 1px solid #d9d9d9;
   border-radius: .25rem;
 }
+select:focus,
 [type="date"]:focus,
+[type="datetime"]:focus,
+[type="datetime-local"]:focus,
+[type="color"]:focus,
 [type="email"]:focus,
+[type="month"]:focus,
 [type="number"]:focus,
 [type="password"]:focus,
-keygen:focus,
-select:focus,
+[type="range"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
 [type="text"]:focus,
+[type="time"]:focus,
+[type="url"]:focus,
+[type="week"]:focus,
 textarea:focus {
   outline-color: #00b4ff;
 }
@@ -5774,7 +5828,9 @@ ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.75rem;
   font-size: 90%;
 }
 
