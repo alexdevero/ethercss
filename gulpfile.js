@@ -50,6 +50,12 @@ gulp.task('sassMin', function() {
     .pipe(gulp.dest('dist'))
 });
 
+// Watch Sass
+
+gulp.task('watch', function() {
+  gulp.watch('src/**/*.scss', ['sass', 'sassMin']);
+});
+
 // Build EtherCSS
 
 gulp.task('build', ['sass', 'sassMin']);
