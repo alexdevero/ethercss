@@ -145,16 +145,16 @@
           <section class="docs-section section--intro" id="intro">
             <h3 class="docs-header">Is EtherCSS for you?</h3>
 
-            <p>You should use EtherCSS if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. EtherCSS only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on EtherCSS and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
+            <p>You should use EtherCSS if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. EtherCSS only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on EtherCSS</u>.</p>
 
             <p>Love EtherCSS and want to Tweet it, share it, or star it? Well, I appreciate that &lt;3</p>
           </section>
 
-          <!-- Grid -->
+          <!-- Grid - 12-column -->
           <section class="docs-section section--grid" id="grid">
-            <h3 class="docs-header">The grid</h3>
+            <h3 class="docs-header">The grid - 12-column</h3>
 
-            <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+            <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
 
             <div class="example-grid docs-example">
               <div class="ether-row">
@@ -221,6 +221,180 @@
                 <div class="ether-md-11">Eleven</div>
 
                 <div class="ether-md-1">One</div>
+              </div>
+            </div>
+
+<pre class="code-example">
+<code class="code-example-code">
+&lt;!-- .container is main centered wrapper --&gt;
+
+&lt;div class="ether-container"&gt;
+
+  &lt;!-- columns should be the immediate child of a .ether-row --&gt;
+
+  &lt;div class="ether-row"&gt;
+    &lt;div class="ether-md-1"&gt;One&lt;/div&gt;
+
+    &lt;div class="ether-md-11"&gt;Eleven&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- just use the number of columns you want --&gt;
+
+  &lt;div class="ether-row"&gt;
+    &lt;div class="ether-md-2"&gt;Two&lt;/div&gt;
+
+    &lt;div class="ether-md-10"&gt;Ten&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Note: columns can be nested, --&gt;
+</code>
+</pre>
+          </section>
+
+          <!-- Grid - 24-column -->
+          <section class="docs-section section--grid-ext" id="grid">
+            <h3 class="docs-header">The grid - 24-column</h3>
+
+            <p>Aside from 12-column grid you can also use extended version of EtherCSS grid system. This grid comes with 24 columns. It grid is also fluid with a max width of 960px.</p>
+
+            <div class="example-grid ether-container-ext docs-example">
+              <div class="ether-row">
+                <div class="ether-md-1">1</div>
+
+                <div class="ether-md-23">23</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-2">2</div>
+
+                <div class="ether-md-22">22</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-3">3</div>
+
+                <div class="ether-md-21">21</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-4">4</div>
+
+                <div class="ether-md-20">20</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-5">5</div>
+
+                <div class="ether-md-19">19</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-6">6</div>
+
+                <div class="ether-md-18">18</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-7">7</div>
+
+                <div class="ether-md-17">17</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-8">8</div>
+
+                <div class="ether-md-16">16</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-9">9</div>
+
+                <div class="ether-md-15">15</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-10">10</div>
+
+                <div class="ether-md-14">14</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-11">11</div>
+
+                <div class="ether-md-13">13</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-12">12</div>
+
+                <div class="ether-md-12">12</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-13">13</div>
+
+                <div class="ether-md-11">11</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-14">14</div>
+
+                <div class="ether-md-10">10</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-15">15</div>
+
+                <div class="ether-md-9">9</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-16">16</div>
+
+                <div class="ether-md-8">8</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-17">17</div>
+
+                <div class="ether-md-7">7</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-18">18</div>
+
+                <div class="ether-md-6">6</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-19">19</div>
+
+                <div class="ether-md-5">5</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-20">20</div>
+
+                <div class="ether-md-4">4</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-21">21</div>
+
+                <div class="ether-md-3">3</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-22">22</div>
+
+                <div class="ether-md-2">2</div>
+              </div>
+
+              <div class="ether-row">
+                <div class="ether-md-23">23</div>
+
+                <div class="ether-md-1">1</div>
               </div>
             </div>
 
