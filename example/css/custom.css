@@ -5,7 +5,66 @@
 /* Header */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(20,20,20,.05), 0 3px 6px rgba(20,20,20,.065);
+}
+
+header ul {
+  list-style-type: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:nth-of-type(n+2) {
+  margin-left: 1rem;
+}
+
+.nav-list a {
+  color: #111;
+  transition: color .25s cubic-bezier(.4,0,1,1);
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+  color: #999;
+}
+
+.nav__inner-list {
   display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a:focus + ul,
+.nav-list a:hover + ul,
+.nav-list a:focus + ul:focus,
+.nav-list a:hover + ul:hover {
+  display: block;
+}
+
+header + div {
+  margin-top: 100px;
 }
 
 /* Value propositin */
