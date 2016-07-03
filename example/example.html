@@ -958,29 +958,44 @@ including indentation in your code --&gt;
 <code class="code-example-body prettyprint">
 /* Mobile first queries variables */
 
+$screen--xm: 400px;/* Larger than mobile */
+
+$screen--sm: 544px;/* Larger than phablet */
+
+$screen--md: 768px;/* Larger than tablet */
+
+$screen--lg: 992px;/* Larger than desktop */
+
+$screen--xl: 1200px;/* Larger than Desktop HD */
+
+$screen--xxl: 1440px;/* Larger than Desktop Ultra HD (TV) */
+
+
+/* Examples */
+
 /* Larger than mobile */
 
-$screen--xm: 400px;
+@media (min-width: 400px) {}
 
 /* Larger than phablet */
 
-$screen--sm: 544px;
+@media (min-width: 544px) {}
 
 /* Larger than tablet */
 
-$screen--md: 768px;
+@media (min-width: 768px) {}
 
 /* Larger than desktop */
 
-$screen--lg: 992px;
+@media (min-width: 992px) {}
 
 /* Larger than Desktop HD */
 
-$screen--xl: 1200px;
+@media (min-width: 1200px) {}
 
 /* Larger than Desktop Ultra HD (TV) */
 
-$screen--xxl: 1440px;
+@media (min-width: 1440px) {}
 </code>
 </pre>
           </section>
