@@ -26,6 +26,10 @@ header {
   border-left: 4px solid #fff;
 }
 
+.section--grid-ext .ether-md-23:first-of-type {
+  width: 95.3%;
+}
+
 /* Footer */
 
 footer {
