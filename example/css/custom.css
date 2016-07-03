@@ -8,6 +8,21 @@ header {
   display: none;
 }
 
+/* Value propositin */
+
+.section--value-props {
+  text-align: center;
+}
+
+.section--value-props h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.value-props--icon-container {
+  margin-bottom: 1.75rem;
+}
+
 /* Grid example */
 
 .example-grid [class^="ether-md-"] {
