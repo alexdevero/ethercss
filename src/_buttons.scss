@@ -28,14 +28,6 @@ button,
      -moz-appearance: button;
 }
 
-/* reset
-button {
-  overflow: visible;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}*/
-
 button,
 [type="button"],
 [type="reset"],
@@ -72,54 +64,70 @@ button,
   }
 }
 
-
-.btn--primary {
-  color: #fff;
-  background-color: $color--primary;
-  border-color: $color--primary;
-
-  &:focus,
-  &:hover {
-    color: #fff;
-    background-color: darken($color--primary, $fib--eight);
-    border-color: darken($color--primary, $fib--eight);
-  }
-}
-
+.btn--alert,
+.btn--disabled,
+.btn--green,
+.btn--primary,
 .btn--secondary {
   color: #fff;
-  background-color: $color--secondary;
-  border-color: $color--secondary;
 
   &:focus,
   &:hover {
     color: #fff;
-    background-color: darken($color--secondary, $fib--eight);
   }
 }
 
 .btn--alert {
-  color: #fff;
   background-color: $color--accent;
   border-color: $color--accent;
 
   &:focus,
   &:hover {
-    color: #fff;
+    background-color: darken($color--accent, $fib--eight);
     border-color: darken($color--accent, $fib--eight);
   }
 }
 
 .btn--disabled {
-  color: #fff;
   background-color: $color--border;
   border-color: $color--border;
   cursor: default;
 
   &:focus,
   &:hover {
-    color: #fff;
     background-color: $color--border;
     border-color: $color--border;
+  }
+}
+
+.btn--green {
+  background-color: $color--green;
+  border-color: $color--green;
+
+  &:focus,
+  &:hover {
+    background-color: darken($color--green, $fib--eight);
+    border-color: darken($color--green, $fib--eight);
+  }
+}
+
+.btn--primary {
+  background-color: $color--primary;
+  border-color: $color--primary;
+
+  &:focus,
+  &:hover {
+    background-color: darken($color--primary, $fib--eight);
+    border-color: darken($color--primary, $fib--eight);
+  }
+}
+
+.btn--secondary {
+  background-color: $color--secondary;
+  border-color: $color--secondary;
+
+  &:focus,
+  &:hover {
+    background-color: darken($color--secondary, $fib--eight);
   }
 }
