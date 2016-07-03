@@ -31,84 +31,80 @@
             <nav class="nav">
               <div class="ether-container">
                 <ul class="nav-list">
-                  <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
-
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-popover="#codeNavPopover">Code</a>
-
-                    <div id="codeNavPopover" class="popover">
-                      <ul class="popover-list">
-                        <li class="popover-item">
-                          <a class="popover-link" href="#grid">Grid</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#typography">Typography</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#buttons">Buttons</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#forms">Forms</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#lists">Lists</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#code">Code</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#tables">Tables</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#queries">Queries</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="#utilities">Utilities</a>
-                        </li>
-                      </ul>
-                    </div>
+                    <a class="nav-link" href="#intro">Intro</a>
                   </li>
 
-                  <li class="nav-item"><a class="nav-link" href="#examples">Examples</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Code</a>
+
+                    <ul class="nav__inner-list">
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#grid">Grid - 12-column</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#gridExt">Grid - 24-column</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#gridFlex">Grid - Flex</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#typography">Typography</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#buttons">Buttons</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#forms">Forms</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#lists">Lists</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#code">Code</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#tables">Tables</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#mediaQueries">Media Queries</a>
+                      </li>
+
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="#utilities">Utilities</a>
+                      </li>
+                    </ul>
+                  </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-popover="#moreNavPopover">More</a>
+                    <a class="nav-link" href="#">More</a>
 
-                    <div id="moreNavPopover" class="popover">
-                      <ul class="popover-list">
-                        <li class="popover-item">
-                          <a class="popover-link" href="https://github.com/dhg/EtherCSS">On Github</a>
-                        </li>
+                    <ul class="nav__inner-list">
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="https://github.com/alexdevero/EtherCSS">On GitHub</a>
+                      </li>
 
-                        <li class="popover-item">
-                          <a class="popover-link" href="https://github.com/dhg/EtherCSS#browser-support">Browsers</a>
-                        </li>
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="https://github.com/alexdevero/EtherCSS#brower-support">Browser Support</a>
+                      </li>
 
-                        <li class="popover-item">
-                          <a class="popover-link" href="https://github.com/dhg/EtherCSS#license">License</a>
-                        </li>
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="https://github.com/alexdevero/EtherCSS#license">License</a>
+                      </li>
 
-                        <li class="popover-item">
-                          <a class="popover-link" href="https://github.com/dhg/EtherCSS#extensions">Extensions</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="https://github.com/dhg/EtherCSS/releases">Versions</a>
-                        </li>
-
-                        <li class="popover-item">
-                          <a class="popover-link" href="https://github.com/dhg/EtherCSS#colophon">Colophon</a>
-                        </li>
-                      </ul>
-                    </div>
+                      <li class="inner-list__item">
+                        <a class="inner-list__link" href="https://github.com/alexdevero/EtherCSS#contributing">Contribution</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -167,7 +163,7 @@
           <hr>
 
           <!-- Grid - 12-column -->
-          <section class="docs-section section--grid" id="grid">
+          <section class="docs-section section--grid" id="gridTwelve">
             <h3 class="docs-header">The grid - 12-column</h3>
 
             <p>The grid is a 12-column fluid grid with a max width of 1140px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
@@ -320,7 +316,7 @@
           <hr>
 
           <!-- Grid - 24-column -->
-          <section class="docs-section section--grid-ext" id="grid">
+          <section class="docs-section section--grid-ext" id="gridExt">
             <h3 class="docs-header">The grid - 24-column</h3>
 
             <p>Aside from 12-column grid you can also use extended version of EtherCSS grid system. This grid comes with 24 columns. This extended grid is also fluid with a max width of 1140px.</p>
@@ -617,7 +613,7 @@
           <hr>
 
           <!-- Grid - 12-column -->
-          <section class="docs-section section--grid" id="grid">
+          <section class="docs-section section--grid" id="gridFlex">
             <h3 class="docs-header">The grid - Flexbox-based</h3>
 
             <p>The grid is a 12-column fluid grid with a max width of 1140px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
@@ -1498,7 +1494,7 @@ including indentation in your code --&gt;
           <hr>
 
           <!-- Queries -->
-          <section class="docs-section section--queries" id="queries">
+          <section class="docs-section section--queries" id="mediaQueries">
             <h3 class="docs-header">Media queries</h3>
 
             <p>EtherCSS uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how EtherCSS's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
