@@ -115,7 +115,7 @@
             </nav>
           </header>
 
-          <section class="header">
+          <section class="docs-section section--value-props">
             <h2 class="title">CSS Framework for the Web of Tomorrow.</h2>
 
             <!-- <a class="button button-primary" href="https://github.com/dhg/EtherCSS/releases/download/2.0.4/EtherCSS-2.0.4.zip" onclick="_gaq.push(['_trackEvent', 'EtherCSS', 'download'])">Download</a> -->
@@ -142,7 +142,7 @@
           </section>
 
           <!-- Why use EtherCSS -->
-          <section class="docs-section section--" id="intro">
+          <section class="docs-section section--intro" id="intro">
             <h3 class="docs-header">Is EtherCSS for you?</h3>
 
             <p>You should use EtherCSS if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. EtherCSS only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on EtherCSS and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
@@ -225,7 +225,7 @@
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;!-- .container is main centered wrapper --&gt;
 
 &lt;div class="ether-container"&gt;
@@ -253,7 +253,7 @@
           </section>
 
           <!-- Typography -->
-          <section class="docs-section section--" id="typography">
+          <section class="docs-section section--typography" id="typography">
             <h3 class="docs-header">Typography</h3>
 
             <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, EtherCSS never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
@@ -301,7 +301,7 @@
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;!-- Standard Headings --&gt;
 
 &lt;h1&gt;Heading&lt;/h1&gt;
@@ -334,7 +334,7 @@
           </section>
 
           <!-- Buttons -->
-          <section class="docs-section section--" id="buttons">
+          <section class="docs-section section--buttons" id="buttons">
             <h3 class="docs-header">Buttons</h3>
 
             <p>Buttons come in two basic flavors in EtherCSS. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
@@ -414,7 +414,7 @@
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;!-- Default buttons --&gt;
 
 &lt;a class="btn" href="#"&gt;Anchor button&lt;/a&gt;
@@ -479,7 +479,7 @@
           </section>
 
           <!-- Forms -->
-          <section class="docs-section section--" id="forms">
+          <section class="docs-section section--forms" id="forms">
             <h3 class="docs-header">Forms</h3>
 
             <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
@@ -615,7 +615,7 @@
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;!-- The above form looks like this --&gt;
 
 &lt;form&gt;
@@ -753,7 +753,7 @@
           </section>
 
           <!-- Lists -->
-          <section class="docs-section section--" id="lists">
+          <section class="docs-section section--lists" id="lists">
             <h3 class="docs-header">Lists</h3>
 
             <div class="ether-row docs-example">
@@ -805,7 +805,7 @@
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;ul&gt;
   &lt;li&gt;Unordered lists have basic styles&lt;/li&gt;
 
@@ -853,7 +853,7 @@
 </pre>
           </section>
 
-          <section class="docs-section section--" id="code">
+          <section class="docs-section section--code" id="code">
             <h3 class="docs-header">Code</h3>
 
             <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
@@ -869,7 +869,7 @@
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;pre&gt;&lt;code&gt;.some-class {
   background-color: red;
 }&lt;/code&gt;&lt;/pre&gt;
@@ -881,7 +881,7 @@ including indentation in your code --&gt;
           </section>
 
           <!-- Tables -->
-          <section class="docs-section section--" id="tables">
+          <section class="docs-section section--tables" id="tables">
             <h3 class="docs-header">Tables</h3>
 
             <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
@@ -925,7 +925,7 @@ including indentation in your code --&gt;
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -966,7 +966,7 @@ including indentation in your code --&gt;
           </section>
 
           <!-- Queries -->
-          <section class="docs-section section--" id="queries">
+          <section class="docs-section section--queries" id="queries">
             <h3 class="docs-header">Media queries</h3>
 
             <p>EtherCSS uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how EtherCSS's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
@@ -994,7 +994,7 @@ including indentation in your code --&gt;
             </div>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 /* Mobile first queries variables */
 
 $screen--xm: 400px;/* Larger than mobile */
@@ -1040,13 +1040,13 @@ $screen--xxl: 1440px;/* Larger than Desktop Ultra HD (TV) */
           </section>
 
           <!-- Utilities and Misc. -->
-          <section class="docs-section section--" id="utilities">
+          <section class="docs-section section--utilities" id="utilities">
             <h3 class="docs-header">Utilities</h3>
 
             <p>EtherCSS has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
 
 <pre class="code-example">
-<code class="code-example-body prettyprint">
+<code class="code-example-code">
 /* Utility Classes */
 
 /* Float either direction */
@@ -1073,7 +1073,7 @@ $screen--xxl: 1440px;/* Larger than Desktop Ultra HD (TV) */
           <hr>
 
           <footer>
-            <p>Thank you for your wonderful feedback and generous support.</p>
+            <p>Thank you for all your feedback and generous support.</p>
           </footer>
         </div>
       </div>
