@@ -25,3 +25,16 @@ header {
 .example-grid [class^="ether-md-"]:nth-of-type(n+2) {
   border-left: 4px solid #fff;
 }
+
+/* Footer */
+
+footer {
+  padding-bottom: 2rem;
+}
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .85rem;
+  text-align: center;
+}
