@@ -770,7 +770,13 @@
                     </ul>
                   </li>
 
-                  <li>Just more list items mama san</li>
+                  <li>Just more list items mama san
+                    <ul>
+                      <li>Nested lists styled to feel right</li>
+
+                      <li>Can nest either type of list into the other</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
 
@@ -781,10 +787,16 @@
                   <li>
                     They use the decimal list style
                     <ul>
-                      <li>Ordered and unordered can be nested</li>
+                      <li>Unordered can be nested</li>
 
-                      <li>Can nest either type of list into the other</li>
+                      <li>You can nest either type of list into the other</li>
                     </ul>
+
+                    <ol>
+                      <li>Ordered can be nested as well</li>
+
+                      <li>You can nest either type of list into the other</li>
+                    </ol>
                   </li>
 
                   <li>Last list item just for the fun</li>
@@ -795,19 +807,46 @@
 <pre class="code-example">
 <code class="code-example-body prettyprint">
 &lt;ul&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Unordered lists have basic styles&lt;/li&gt;
 
   &lt;li&gt;
-    Item 2
+    They use the circle list style
     &lt;ul&gt;
-      &lt;li&gt;Item 2.1&lt;/li&gt;
+      &lt;li&gt;Nested lists styled to feel right&lt;/li&gt;
 
-      &lt;li&gt;Item 2.2&lt;/li&gt;
+      &lt;li&gt;Can nest either type of list into the other&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 
-  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Just more list items mama san
+    &lt;ul&gt;
+      &lt;li&gt;Nested lists styled to feel right&lt;/li&gt;
+
+      &lt;li&gt;Can nest either type of list into the other&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ordered lists also have basic styles&lt;/li&gt;
+
+  &lt;li&gt;
+    They use the decimal list style
+    &lt;ul&gt;
+      &lt;li&gt;Unordered can be nested&lt;/li&gt;
+
+      &lt;li&gt;You can nest either type of list into the other&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Ordered can be nested as well&lt;/li&gt;
+
+      &lt;li&gt;You can nest either type of list into the other&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;Last list item just for the fun&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;!-- Easily substitute any &lt;ul&gt; or an &lt;ol&gt; to get number lists or sublists. EtherCSS doesn't support lists nested deeper than 2 levels --&gt;
 </code>
