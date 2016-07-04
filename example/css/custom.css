@@ -9,8 +9,6 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   width: 100%;
   background: #fff;
   box-shadow: 0 3px 3px rgba(20,20,20,.05), 0 3px 6px rgba(20,20,20,.065);
@@ -35,32 +33,59 @@ header ul {
   position: relative;
 }
 
-.nav-item:nth-of-type(n+2) {
-  margin-left: 1rem;
-}
-
 .nav-list a {
+  display: block;
   color: #111;
-  transition: color .25s cubic-bezier(.4,0,1,1);
 }
 
-.nav-list a:focus,
-.nav-list a:hover {
-  color: #999;
+.nav-link,
+.inner-list__link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-weight: bold;
+  text-transform: lowercase;
+  border-bottom: 2px solid #fff;
+  transition: all .25s cubic-bezier(.4,0,1,1);
+}
+
+.nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.inner-list__link:focus,
+.inner-list__link:hover {
+  color: #00b4ff;
+  border-bottom-color: inherit;
 }
 
 .nav__inner-list {
-  display: none;
   position: absolute;
-  margin: 0;
+  display: none;
   padding: 0;
+  margin: 0;
+  box-shadow: 0 3px 3px rgba(20,20,20,.05), 0 3px 6px rgba(20,20,20,.065);
+  opacity: 0;
+}
+
+.inner-list__item {
+  line-height: 1;
+}
+
+.inner-list__link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background: #fff;
 }
 
 .nav-list a:focus + ul,
 .nav-list a:hover + ul,
-.nav-list a:focus + ul:focus,
-.nav-list a:hover + ul:hover {
+.nav-list a + ul:focus,
+.nav-list a + ul:hover {
   display: block;
+  opacity: 1;
 }
 
 header + div {
