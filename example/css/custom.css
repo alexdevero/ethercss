@@ -63,6 +63,7 @@ header ul {
 
 .nav__inner-list {
   position: absolute;
+  right: 0;
   display: none;
   padding: 0;
   margin: 0;
@@ -89,7 +90,30 @@ header ul {
 }
 
 header + div {
-  margin-top: 100px;
+  margin-top: 59px;
+}
+
+/* Hero */
+
+.docs-hero {
+  width: 100%;
+  min-height: 32rem;
+  background: url(../../img/EtherCSS-xs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  @media screen and (min-width: 400px) {}
+
+  @media screen and (min-width: 544px) {}
+
+  @media screen and (min-width: 768px) {}
+
+  @media screen and (min-width: 992px) {}
+
+  @media screen and (min-width: 1200px) {}
+
+  @media screen and (min-width: 1440px) {}
 }
 
 /* Value propositin */
