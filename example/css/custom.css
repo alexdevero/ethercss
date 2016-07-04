@@ -98,22 +98,39 @@ header + div {
 .docs-hero {
   width: 100%;
   min-height: 32rem;
-  background: url(../../img/EtherCSS-xs.jpg);
+  background-image: url(../../img/EtherCSS-xs.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+}
+@media screen and (min-width: 544px) {
+  .docs-hero {
+    background-image: url(../../img/EtherCSS-sm.jpg);
+  }
+}
 
-  @media screen and (min-width: 400px) {}
+@media screen and (min-width: 768px) {
+  .docs-hero {
+    background-image: url(../../img/EtherCSS-md.jpg);
+  }
+}
 
-  @media screen and (min-width: 544px) {}
+@media screen and (min-width: 992px) {
+  .docs-hero {
+    background-image: url(../../img/EtherCSS-lg.jpg);
+  }
+}
 
-  @media screen and (min-width: 768px) {}
+@media screen and (min-width: 1200px) {
+  .docs-hero {
+    background-image: url(../../img/EtherCSS-xl.jpg);
+  }
+}
 
-  @media screen and (min-width: 992px) {}
-
-  @media screen and (min-width: 1200px) {}
-
-  @media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .docs-hero {
+    background-image: url(../../img/EtherCSS-xxl.jpg);
+  }
 }
 
 /* Value propositin */
