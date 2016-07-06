@@ -99,6 +99,7 @@ header + div {
   width: 100%;
   min-height: 32rem;
   background-image: url(../../img/EtherCSS-xs.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
