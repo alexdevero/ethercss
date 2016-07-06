@@ -9,23 +9,23 @@
   margin-left: auto;
   max-width: 90%;
 
-  @media (min-width: 544px) {
+  @media (min-width: $screen--sm) {
     max-width: 85%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen--md) {
     max-width: remy(720px);
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $screen--lg) {
     max-width: remy(940px);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $screen--xl) {
     max-width: remy(1140px);
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: $screen--xxl) {
     max-width: remy(1368px);
   }
 
