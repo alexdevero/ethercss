@@ -10,9 +10,10 @@
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
+  max-width: 90%;
 
   @media (min-width: 544px) {
-    max-width: remy(576px);
+    max-width: 85%;
   }
 
   @media (min-width: 768px) {
@@ -25,6 +26,10 @@
 
   @media (min-width: 1200px) {
     max-width: remy(1140px);
+  }
+
+  @media (min-width: 1400px) {
+    max-width: remy(1368px);
   }
 
   &::after {
