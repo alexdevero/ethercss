@@ -7,7 +7,11 @@
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 90%;
+  max-width: 95%;
+
+  @media (min-width: $screen--xm) {
+    max-width: 90%;
+  }
 
   @media (min-width: $screen--sm) {
     max-width: 85%;
