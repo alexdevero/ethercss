@@ -2,6 +2,20 @@
  * Tables
  */
 
+.table-responsive-container {
+  max-width: 100%;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
+}
+
 table {
   border-spacing: 0; 
   border-collapse: collapse;
