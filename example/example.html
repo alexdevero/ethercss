@@ -1532,6 +1532,110 @@ including indentation in your code --&gt;
                 </div>
               </div>
 
+              <div class="table-responsive-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+
+                      <th>Mobile</th>
+
+                      <th>Phablet</th>
+
+                      <th>Tablet</th>
+
+                      <th>Desktop</th>
+
+                      <th>D. HD</th>
+
+                      <th>D. Ultra HD</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Breakpoint</td>
+
+                      <td>400px</td>
+
+                      <td>544px</td>
+
+                      <td>768px</td>
+
+                      <td>992px</td>
+
+                      <td>1200px</td>
+
+                      <td>1440px</td>
+                    </tr>
+
+                    <tr>
+                      <td>Container</td>
+
+                      <td>90%</td>
+
+                      <td>85%</td>
+
+                      <td>720px</td>
+
+                      <td>940px</td>
+
+                      <td>1140px</td>
+
+                      <td>1368px</td>
+                    </tr>
+
+                    <tr>
+                      <td>Class prefix</td>
+
+                      <td>ether-xs-*</td>
+
+                      <td>ether-xm-*</td>
+
+                      <td>ether-md-*</td>
+
+                      <td>ether-lg-*</td>
+
+                      <td>ether-xl-*</td>
+
+                      <td>ether-xxl-*</td>
+                    </tr>
+
+                    <tr>
+                      <td>Nestable</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                      <td>Offsets</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+
+                      <td>Yes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
 <pre class="code-example">
 <code class="code-example-code">
 /* Mobile first queries variables */
@@ -1547,33 +1651,6 @@ $screen--lg: 992px;/* Larger than desktop */
 $screen--xl: 1200px;/* Larger than Desktop HD */
 
 $screen--xxl: 1440px;/* Larger than Desktop Ultra HD (TV) */
-
-
-/* Mobile first queries examples */
-
-/* Larger than mobile */
-
-@media (min-width: 400px) {}
-
-/* Larger than phablet */
-
-@media (min-width: 544px) {}
-
-/* Larger than tablet */
-
-@media (min-width: 768px) {}
-
-/* Larger than desktop */
-
-@media (min-width: 992px) {}
-
-/* Larger than Desktop HD */
-
-@media (min-width: 1200px) {}
-
-/* Larger than Desktop Ultra HD (TV) */
-
-@media (min-width: 1440px) {}
 </code>
 </pre>
             </section>
