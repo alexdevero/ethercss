@@ -150,7 +150,7 @@ header + div {
 
 /* Grid example */
 
-.example-grid [class^="ether-md-"] {
+.example-grid [class^="ether-xm-"] {
   margin-bottom: .75rem;
   height: 32px;
   font-size: .85rem;
@@ -158,15 +158,21 @@ header + div {
   line-height: 32px;
   text-align: center;
   text-transform: uppercase;
-  background: #eee;
-  border-radius: 4px;
 }
 
-.example-grid [class^="ether-md-"]:nth-of-type(n+2) {
-  border-left: 4px solid #fff;
+.example-grid [class^="ether-xm-"]:first-of-type {
+  background: #e0e0e0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-.section--grid-ext .ether-md-23:first-of-type {
+.example-grid [class^="ether-xm-"]:last-of-type {
+  background: #f1f1f1;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.docs-section .example-grid .ether-xm-23 {
   width: 95.3%;
 }
 
