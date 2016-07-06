@@ -82,10 +82,16 @@ template,
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
+  max-width: 95%;
+}
+@media (min-width: 400px) {
+  .ether-container {
+    max-width: 90%;
+  }
 }
 @media (min-width: 544px) {
   .ether-container {
-    max-width: 36rem;
+    max-width: 85%;
   }
 }
 @media (min-width: 768px) {
@@ -101,6 +107,11 @@ template,
 @media (min-width: 1200px) {
   .ether-container {
     max-width: 71.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .ether-container {
+    max-width: 85.5rem;
   }
 }
 .ether-container::after {
@@ -1780,10 +1791,16 @@ template,
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
+  max-width: 95%;
+}
+@media (min-width: 400px) {
+  .ether-container-ext {
+    max-width: 90%;
+  }
 }
 @media (min-width: 544px) {
   .ether-container-ext {
-    max-width: 36rem;
+    max-width: 85%;
   }
 }
 @media (min-width: 768px) {
@@ -1799,6 +1816,11 @@ template,
 @media (min-width: 1200px) {
   .ether-container-ext {
     max-width: 71.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .ether-container-ext {
+    max-width: 85.5rem;
   }
 }
 .ether-container-ext::after {
@@ -3554,10 +3576,16 @@ template,
   padding-left: .9375rem;
   margin-right: auto;
   margin-left: auto;
+  max-width: 95%;
+}
+@media (min-width: 400px) {
+  .ether-container-flex {
+    max-width: 90%;
+  }
 }
 @media (min-width: 544px) {
   .ether-container-flex {
-    max-width: 36rem;
+    max-width: 85%;
   }
 }
 @media (min-width: 768px) {
@@ -3573,6 +3601,11 @@ template,
 @media (min-width: 1200px) {
   .ether-container-flex {
     max-width: 71.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  .ether-container-flex {
+    max-width: 85.5rem;
   }
 }
 .ether-container-flex::after {
@@ -5855,6 +5888,18 @@ li {
 /**
  * Tables
  */
+.table-responsive-container {
+  overflow-x: auto; 
+  max-width: 100%;
+}
+.table-responsive-container table {
+  width: 100%;
+}
+.table-responsive-container th,
+.table-responsive-container td {
+  white-space: nowrap;
+}
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
