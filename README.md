@@ -17,7 +17,7 @@ EtherCSS is lightweight and simple. It provides only minimal setup of styles for
 ### Demo:
 Take a look at EtherCSS [demo](http://ethercss.alexdevero.com/example/example.html).
 
-### Brower support:
+### Browser support:
 | IE    | Google Chrome  | Mozzila Firefox | Safari |
 | :---: | :------------: | :-------------: | :----: |
 |  +11  |  +45           |  +45            | +8.4   |
