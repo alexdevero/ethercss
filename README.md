@@ -28,13 +28,6 @@ Take a look at EtherCSS [demo](http://ethercss.alexdevero.com/example/example.ht
 $ npm install ethercss
 ```
 
-<!-- Todo:
-**Install with Bower**
-```sh
-$ bower install ethercss
-```
--->
-
 <!-- 
 ### Table of Contents
 Todo:
