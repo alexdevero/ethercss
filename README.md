@@ -1,3 +1,7 @@
+[![Build Status](https://circleci.com/gh/alexdevero/EtherCSS.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/alexdevero/EtherCSS/)
+[![Dependency Status](https://david-dm.org/alexdevero/EtherCSS.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS)
+[![devDependency Status](https://david-dm.org/alexdevero/EtherCSS/dev-status.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS?type=dev)
+
 # EtherCSS
 CSS framework for the Web of tomorrow.
 
