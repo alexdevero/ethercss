@@ -30,10 +30,10 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-csscomb": "^3.0.7",
-    "gulp-csslint": "^0.3.1",
+    "gulp-csslint": "^1.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
-    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-util": "^3.0.7"
   },
   "dependencies": {}
