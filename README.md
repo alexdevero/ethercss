@@ -2,6 +2,7 @@
 [![Dependency Status](https://david-dm.org/alexdevero/EtherCSS.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS)
 [![devDependency Status](https://david-dm.org/alexdevero/EtherCSS/dev-status.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS?type=dev)
 [![Built with Gulp](https://img.shields.io/badge/build%20with-gulp-orange.svg)](http://gulpjs.com/)
+[![Built by DEVERO](https://img.shields.io/badge/built%20by-DEVERO-brightgreen.svg?colorB=d30320)](https://alexdevero.com)
 
 # EtherCSS
 CSS framework for the Web of tomorrow.
