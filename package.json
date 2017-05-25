@@ -27,14 +27,23 @@
   },
   "homepage": "https://github.com/alexdevero/EtherCSS#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-csscomb": "^3.0.7",
+    "gulp-clean": "^0.3.2",
+    "gulp-csscomb": "^3.0.8",
     "gulp-csslint": "^1.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sequence": "^0.4.6",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.8",
+    "normalize.css": "^7.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "require-dir": "^0.3.1"
   },
   "dependencies": {}
 }
