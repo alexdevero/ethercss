@@ -4,7 +4,9 @@
   "description": "Lightweight and flexible CSS framework for the Web of tomorrow.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build": "gulp clean && npm run test && gulp build",
+    "start": "gulp dev",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,15 @@
   },
   "homepage": "https://github.com/alexdevero/EtherCSS#readme",
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1",
     "browser-sync": "^2.18.12",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^3.1.0",
     "gulp-clean": "^0.3.2",
     "gulp-csscomb": "^3.0.8",
     "gulp-csslint": "^1.0.0",
