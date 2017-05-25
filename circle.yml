@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 7.10.0
+  pre:
+    - mkdir ~/.yarn-cache
+
+dependencies:
+  cache_directories:
+    - '~/.yarn-cache'
+  override:
+    - yarn install
+    - npm rebuild node-sass
+
+test:
+  override:
+    - yarn test
