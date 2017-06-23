@@ -1,6 +1,10 @@
 <!-- [![Build Status](https://circleci.com/gh/alexdevero/EtherCSS.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/alexdevero/EtherCSS/) -->
-[![Dependency Status](https://david-dm.org/alexdevero/EtherCSS.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS)
+<!-- [![Dependency Status](https://david-dm.org/alexdevero/EtherCSS.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS) -->
 [![devDependency Status](https://david-dm.org/alexdevero/EtherCSS/dev-status.svg?style=flat)](https://david-dm.org/alexdevero/EtherCSS?type=dev)
+[![npm](https://img.shields.io/npm/dw/localeval.svg)]()
+[![npm](https://img.shields.io/npm/dm/localeval.svg)]()
+[![npm](https://img.shields.io/npm/dy/localeval.svg)]()  
+
 [![Built with Gulp](https://img.shields.io/badge/build%20with-gulp-orange.svg)](http://gulpjs.com/)
 [![Built by DEVERO](https://img.shields.io/badge/built%20by-DEVERO-brightgreen.svg?colorB=d30320)](https://alexdevero.com)
 
