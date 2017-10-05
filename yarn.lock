@@ -2257,12 +2257,12 @@ gulp-rename@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.2.2.tgz#3ad4428763f05e2764dec1c67d868db275687817"
 
-gulp-sass-lint@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/gulp-sass-lint/-/gulp-sass-lint-1.3.3.tgz#f879d423e517a2872a8902466c0dec8146dc7874"
+gulp-sass-lint@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/gulp-sass-lint/-/gulp-sass-lint-1.3.4.tgz#a9950c2dd050fd00fbf2ebc063016434a22100e2"
   dependencies:
     gulp-util "^3.0.6"
-    sass-lint "^1.11.0"
+    sass-lint "^1.12.0"
     through2 "^2.0.2"
 
 gulp-sass@^3.1.0:
@@ -4686,9 +4686,9 @@ sass-graph@^2.1.1:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-lint@^1.11.0:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/sass-lint/-/sass-lint-1.11.1.tgz#1ccea9be01e60fd0ca7ddf379a0096311b218240"
+sass-lint@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/sass-lint/-/sass-lint-1.12.0.tgz#299ec57cd158fb4afbe22cb322799cc630a3e33b"
   dependencies:
     commander "^2.8.1"
     eslint "^2.7.0"
