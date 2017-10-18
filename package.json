@@ -5,13 +5,13 @@
   "main": "index.js",
   "engines": {
     "node": ">=5.x.x",
-    "npm": ">=7.x.x",
-    "yarn": ">=0.24.x"
+    "npm": ">=8.x.x",
+    "yarn": ">=1.x.x"
   },
   "scripts": {
-    "build": "gulp clean && npm run test && gulp build",
-    "start": "gulp dev",
-    "test": "gulp test"
+    "build": "set NODE_ENV=production && gulp clean && npm run test && gulp build",
+    "start": "set NODE_ENV=development && gulp dev",
+    "test": "set NODE_ENV=test && gulp test"
   },
   "repository": {
     "type": "git",
@@ -19,13 +19,15 @@
   },
   "keywords": [
     "css",
+    "flexible",
     "framework",
     "grid",
-    "mobile",
-    "responsive",
-    "flexible",
     "lightweight",
-    "future"
+    "mobile",
+    "open",
+    "open source",
+    "responsive",
+    "source"
   ],
   "author": "@alexdevero",
   "license": "MIT",
