@@ -9,7 +9,7 @@
     "yarn": ">=1.x.x"
   },
   "scripts": {
-    "build": "set NODE_ENV=production && gulp clean && npm run test && gulp build",
+    "build": "set NODE_ENV=production && npm run test && gulp clean && gulp build",
     "start": "set NODE_ENV=development && gulp dev",
     "test": "set NODE_ENV=test && gulp test"
   },
