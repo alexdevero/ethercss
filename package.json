@@ -11,7 +11,7 @@
   "scripts": {
     "build": "set NODE_ENV=production && npm run test && gulp clean && gulp build",
     "start": "set NODE_ENV=development && gulp dev",
-    "test": "set NODE_ENV=test && gulp test"
+    "test": "set NODE_ENV=test && sass-lint -v -q"
   },
   "repository": {
     "type": "git",

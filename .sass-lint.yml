@@ -5,10 +5,10 @@
 options:
   formatter: stylish
 files:
-  include: '**/*.s+(a|c)ss'
+  include: 'src/**/*.s+(a|c)ss'
   ignore:
-    - '**/_normalize.s+(a|c)ss'
-    - '**/_print.s+(a|c)ss'
+    - 'src/**/_normalize.s+(a|c)ss'
+    - 'src/**/_print.s+(a|c)ss'
 
 rules:
   # Extends
