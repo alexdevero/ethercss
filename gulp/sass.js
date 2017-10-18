@@ -12,7 +12,24 @@ import rename from 'gulp-rename'
 import sass from 'gulp-sass'
 import sourcemaps from 'gulp-sourcemaps'
 
-const processors = [
+const dirs = {
+  src: './src/ethercss.scss',
+  dest: './dist'
+}
+
+const processorsDev = [
+  cssnext({
+    browsers: [
+      'Chrome >= 45',
+      'Firefox >= 35',
+      'ie >= 9',
+      'last 5 versions',
+      'Safari >= 7'
+    ]
+  })
+]
+
+const processorsProd = [
   cssnext({
     browsers: [
       'Chrome >= 45',
@@ -29,7 +46,7 @@ const processors = [
 
 // Compile Sass to CSS - default
 gulp.task('sass:default', () => {
-  return gulp.src('src/ethercss.scss')
+  return gulp.src(dirs.src)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -38,10 +55,9 @@ gulp.task('sass:default', () => {
       console.log(e + '\r\n There\'s something wrong with the Sass file(s).')
     }))
     .pipe(csscomb())
-    .pipe(postcss(processors))
+    .pipe(postcss(processorsDev))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest(dirs.dest))
     .pipe(browserSync.stream({
       match: '**/*.css'
     }))
@@ -49,7 +65,7 @@ gulp.task('sass:default', () => {
 
 // Compile Sass to CSS - minified
 gulp.task('sass:min', () => {
-  return gulp.src('./src/ethercss.scss')
+  return gulp.src(dirs.src)
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -58,12 +74,12 @@ gulp.task('sass:min', () => {
       console.log(e + '\r\n There\'s something wrong with minified Sass file(s).')
     }))
     .pipe(csscomb())
-    .pipe(postcss(processors))
+    .pipe(postcss(processorsProd))
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest(dirs.dest))
     .pipe(browserSync.stream({
       match: '**/*.css'
     }))
