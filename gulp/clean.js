@@ -8,6 +8,7 @@ gulp.task('clean', () => {
 
   console.log('Clean \'dist\' folder')
 
-  return gulp.src('dist')
-    .pipe(del())
+	return del([
+		'./dist',
+	])
 })
