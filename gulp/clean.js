@@ -4,12 +4,10 @@ import gulp from 'gulp';
 
 // Clean dist
 gulp.task('clean', () => {
-  const clean = require('gulp-clean');
+  const del = require('del')
 
-  console.log('Clean \'dist\' folder');
+  console.log('Clean \'dist\' folder')
 
-  return gulp.src('dist', {
-    read: false
-  })
-    .pipe(clean());
-});
+  return gulp.src('dist')
+    .pipe(del())
+})

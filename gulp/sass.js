@@ -1,29 +1,35 @@
-'use strict';
+'use strict'
 
-import gulp from 'gulp';
+import gulp from 'gulp'
 
-import browserSync from 'browser-sync';
-import csscomb from 'gulp-csscomb';
-import cssnano from 'cssnano';
-import cssnext from 'postcss-cssnext';
-import plumber from 'gulp-plumber';
-import postcss from 'gulp-postcss';
-import rename from 'gulp-rename';
-import sass from 'gulp-sass';
-import sourcemaps from 'gulp-sourcemaps';
+import browserSync from 'browser-sync'
+import csscomb from 'gulp-csscomb'
+import cssnano from 'cssnano'
+import cssnext from 'postcss-cssnext'
+import plumber from 'gulp-plumber'
+import postcss from 'gulp-postcss'
+import rename from 'gulp-rename'
+import sass from 'gulp-sass'
+import sourcemaps from 'gulp-sourcemaps'
 
 const processors = [
   cssnext({
-    browsers: ['last 5 versions', 'ie >= 9']
+    browsers: [
+      'Chrome >= 45',
+      'Firefox >= 35',
+      'ie >= 9',
+      'last 5 versions',
+      'Safari >= 7'
+    ]
   }),
   cssnano({
     autoprefixer: false
   })
-];
+]
 
-// Sass to CSS
+// Compile Sass to CSS - default
 gulp.task('sass:default', () => {
-  return gulp.src('./src/scss/main.scss')
+  return gulp.src('src/ethercss.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -35,14 +41,15 @@ gulp.task('sass:default', () => {
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream({
       match: '**/*.css'
-    }));
-});
+    }))
+})
 
-// Sass to CSS - minified
+// Compile Sass to CSS - minified
 gulp.task('sass:min', () => {
-  return gulp.src('./src/scss/main.scss')
+  return gulp.src('./src/ethercss.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -59,17 +66,17 @@ gulp.task('sass:min', () => {
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream({
       match: '**/*.css'
-    }));
-});
+    }))
+})
 
 gulp.task('sass:test', () => {
-  const sassLint = require('gulp-sass-lint');
+  const sassLint = require('gulp-sass-lint')
 
-  console.log('Running Sass lint test');
+  console.log('Running Sass lint test')
 
-  return gulp.src('./src/scss/**/*.scss')
+  return gulp.src('./src/**/*.scss')
     .pipe(plumber())
     .pipe(sassLint())
     .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
-});
+    .pipe(sassLint.failOnError())
+})
