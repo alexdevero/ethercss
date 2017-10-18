@@ -1,0 +1,37 @@
+// Config
+
+// Breakpoints
+$screen--xm: 400px;
+$screen--sm: 544px;
+$screen--md: 768px;
+$screen--lg: 992px;
+$screen--xl: 1200px;
+$screen--xxl: 1440px;
+
+// Colors
+$color--accent: #f23a65;// Bright, strawberry, red
+$color--black: #111;// Very dark gray (mostly black)
+$color--border: #d9d9d9;//Very light gray
+$color--green: #43b37f;
+$color--primary: #00b4ff;// Pure (or mostly pure) blue
+$color--secondary: #556270;// Very dark grayish blue
+$color--tertiary: #f4f5f6;// Light grayish blue
+
+// Fibonacci sequence
+$fib--one: 0;
+$fib--two: 1;
+$fib--three: 1;
+$fib--four: 2;
+$fib--five: 3;
+$fib--six: 5;
+$fib--seven: 8;
+$fib--eight: 13;
+$fib--nine: 21;
+$fib--ten: 34;
+$fib--eleven: 55;
+$fib--twelve: 89;
+
+// Variables
+$breakpoint--typography: 640px;
+$radius--full: remy(1000px);
+$radius--small: remy(4px);
