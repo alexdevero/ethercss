@@ -17,7 +17,7 @@
 }
 
 table {
-  border-spacing: 0; 
+  border-spacing: 0;
   border-collapse: collapse;
 }
 
@@ -29,14 +29,12 @@ td {
   padding-left: remy(15px);
   text-align: left;
   border-bottom: 1px solid #e1e1e1;
-}
 
-th:first-child,
-td:first-child {
-  padding-left: 0;
-}
+  &:first-child {
+    padding-left: 0;
+  }
 
-th:last-child,
-td:last-child {
-  padding-right: 0;
+  td:last-child {
+    padding-right: 0;
+  }
 }

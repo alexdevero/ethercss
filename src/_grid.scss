@@ -1,6 +1,4 @@
-//
 // Grid system
-//
 
 .ether-container {
   padding-right: .9375rem;
@@ -64,7 +62,6 @@
 }
 
 /* Default column settings */
-
 .ether-xs-1,
 .ether-xs-2,
 .ether-xs-3,
@@ -156,7 +153,6 @@
 }
 
 /* Mobile first queries */
-
 .ether-xs-1,
 .ether-xs-2,
 .ether-xs-3,
@@ -221,7 +217,6 @@
 }
 
 /* Mobile first queries - Content manipulation */
-
 .ether-xs-pull-0 {
   right: auto;
 }
@@ -379,7 +374,6 @@
 }
 
 /* Screens 400px and up (larger than mobile) */
-
 @media (min-width: $screen--xm) {
   .ether-xm-1,
   .ether-xm-2,
@@ -445,7 +439,6 @@
   }
 
   /* Screens 400px and up (larger than mobile) - Content manipulation */
-
   .ether-xm-pull-0 {
     right: auto;
   }
@@ -605,7 +598,6 @@
 
 
 /* Screens 544px and up (larger than phablets) */
-
 @media (min-width: $screen--sm) {
   .ether-sm-1,
   .ether-sm-2,
@@ -671,7 +663,6 @@
   }
 
   /* Screens 544px and up (larger than phablets) - Content manipulation */
-
   .ether-sm-pull-0 {
     right: auto;
   }
@@ -830,7 +821,6 @@
 }
 
 /* Screens 768px and up (larger than tablet) */
-
 @media (min-width: $screen--md) {
   .ether-md-1,
   .ether-md-2,
@@ -896,7 +886,6 @@
   }
 
   /* Screens 768px and up (larger than tablet) - Content manipulation */
-
   .ether-md-pull-0 {
     right: auto;
   }
@@ -1055,7 +1044,6 @@
 }
 
 /* Screens 992px and up (larger than desktop) */
-
 @media (min-width: $screen--lg) {
   .ether-lg-1,
   .ether-lg-2,
@@ -1121,7 +1109,6 @@
   }
 
   /* Screens 992px and up (larger than desktop) - Content manipulation */
-
   .ether-lg-pull-0 {
     right: auto;
   }
@@ -1280,7 +1267,6 @@
 }
 
 /* Screens 1200px and up (larger than HD desktop) */
-
 @media (min-width: $screen--xl) {
   .ether-xl-1,
   .ether-xl-2,
@@ -1346,7 +1332,6 @@
   }
 
   /* Screens 1200px and up (larger than HD desktop) - Content manipulation */
-
   .ether-xl-pull-0 {
     right: auto;
   }
@@ -1505,7 +1490,6 @@
 }
 
 /* Screens 1440px and up (larger than ultra HD desktop) */
-
 @media (min-width: $screen--xxl) {
   .ether-xxl-1,
   .ether-xxl-2,
@@ -1571,7 +1555,6 @@
   }
 
   /* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
-
   .ether-xxl-pull-0 {
     right: auto;
   }

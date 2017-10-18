@@ -1,6 +1,4 @@
-/**
- * Utilities
- */
+/* Utilities */
 
 .ether-pull-right {
   float: right;
@@ -12,7 +10,7 @@
 
 /* Clear a float */
 .ether-clearfix {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }

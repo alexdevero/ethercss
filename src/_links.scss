@@ -1,6 +1,4 @@
-/**
- * Links
- */
+/* Links */
 
 a {
   color: $color--primary;
@@ -27,9 +25,9 @@ a {
 
   &:visited {
     color: darken($color--primary, 21%);
-  }
 
-  &:visited:hover {
-    color: darken($color--primary, 34%);
+    &:hover {
+      color: darken($color--primary, 34%);
+    }
   }
 }

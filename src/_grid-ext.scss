@@ -1,6 +1,4 @@
-//
-// Grid system - Extended - 24 columns
-//
+/* Grid system - Extended - 24 columns */
 
 .ether-container-ext {
   padding-right: .9375rem;
@@ -36,7 +34,7 @@
   &::after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 }
 
@@ -49,7 +47,7 @@
   &::after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 }
 
@@ -60,12 +58,11 @@
   &::after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 }
 
 /* Default column settings */
-
 .ether-container-ext {
   .ether-xs-1,
   .ether-xs-2,
@@ -243,7 +240,6 @@
 }
 
 /* Mobile first queries */
-
 .ether-container-ext {
   .ether-xs-1,
   .ether-xs-2,
@@ -370,7 +366,6 @@
 }
 
 /* Mobile first queries - Content manipulation */
-
 .ether-container-ext {
   .ether-xs-pull-0 {
     right: auto;
@@ -530,7 +525,6 @@
 }
 
 /* Screens 400px and up (larger than mobile) */
-
 @media (min-width: $screen--xm) {
   .ether-container-ext {
     .ether-xm-1,
@@ -821,7 +815,6 @@
 }
 
 /* Screens 544px and up (larger than phablets) */
-
 @media (min-width: $screen--sm) {
   .ether-container-ext {
     .ether-sm-1,
@@ -1111,7 +1104,6 @@
 }
 
 /* Screens 768px and up (larger than tablet) */
-
 @media (min-width: $screen--md) {
   .ether-container-ext {
     .ether-md-1,
@@ -1240,7 +1232,6 @@
 }
 
 /* Screens 768px and up (larger than tablet) - Content manipulation */
-
 @media (min-width: $screen--md) {
   .ether-container-ext {
     .ether-md-pull-0 {
@@ -1402,7 +1393,6 @@
 }
 
 /* Screens 992px and up (larger than desktop) */
-
 @media (min-width: $screen--lg) {
   .ether-container-ext {
     .ether-lg-1,
@@ -1531,7 +1521,6 @@
 }
 
 /* Screens 992px and up (larger than desktop) - Content manipulation */
-
 @media (min-width: $screen--lg) {
   .ether-container-ext {
     .ether-lg-pull-0 {
@@ -1693,7 +1682,6 @@
 }
 
 /* Screens 1200px and up (larger than HD desktop) */
-
 @media (min-width: $screen--xl) {
   .ether-container-ext {
     .ether-xl-1,
@@ -1822,7 +1810,6 @@
 }
 
 /* Screens 1200px and up (larger than HD desktop) - Content manipulation */
-
 @media (min-width: $screen--xl) {
   .ether-container-ext {
     .ether-xl-pull-0 {
@@ -1984,7 +1971,6 @@
 }
 
 /* Screens 1440px and up (larger than ultra HD desktop) */
-
 @media (min-width: $screen--xxl) {
   .ether-container-ext {
     .ether-xxl-1,
@@ -2113,7 +2099,6 @@
 }
 
 /* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
-
 @media (min-width: $screen--xxl) {
   .ether-container-ext {
     .ether-xxl-pull-0 {

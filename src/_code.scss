@@ -1,12 +1,16 @@
-/**
- * Code
- */
+/* Code */
 
 pre {
   overflow: auto;
   font-family: monospace, monospace;
   font-size: 1em;
   word-wrap: break-word;
+
+  > code {
+    display: block;
+    padding: .5rem 1rem 1.5rem;
+    white-space: pre;
+  }
 }
 
 code {
@@ -18,10 +22,4 @@ code {
   background: $color--tertiary;
   border-radius: 4px;
   overflow: auto;
-}
-
-pre > code {
-  display: block;
-  padding: .5rem 1rem 1.5rem;
-  white-space: pre;
 }

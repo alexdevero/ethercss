@@ -1,27 +1,25 @@
-/**
- * EtherCSS v0.0.89
- */
+/**/
+/* EtherCSS v0.0.89 */
+/**/
 
- @charset "UTF-8";
+ @charset 'UTF-8';
 
-//
 // Sass Modules
-//
 
-@import 'tools/functions',
-        'tools/mixins',
-        'config',
-        'base',
-        'grid',
-        'grid-ext',
-        'grid-flex',
-        'typography',
-        'blockquotes',
-        'buttons',
-        'code',
-        'dividers',
-        'forms',
-        'links',
-        'lists',
-        'tables',
-        'utilities';
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'settings/config';
+@import 'base';
+@import 'grid';
+@import 'grid-ext';
+@import 'grid-flex';
+@import 'typography';
+@import 'blockquotes';
+@import 'buttons';
+@import 'code';
+@import 'dividers';
+@import 'forms';
+@import 'links';
+@import 'lists';
+@import 'tables';
+@import 'utilities';
