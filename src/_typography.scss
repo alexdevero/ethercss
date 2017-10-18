@@ -4,7 +4,6 @@
 html {
   font-family: sans-serif;
   font-size: 16px;
-  font-size: 100%;
   color: $color--black;
 
   /*@media screen and (min-width: $breakpoint--typography) {
@@ -14,6 +13,7 @@ html {
 
 // Default body styles
 body {
+  font-size: 100%;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -138,14 +138,13 @@ hgroup {
 }
 
 abbr {
-  letter-spacing: 0.1em;
-}
+  letter-spacing: .1em;
 
-abbr[title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
-  /*border-bottom: 1px dotted;*/
-  border-bottom: none;
+  &[title] {
+    text-decoration: underline dotted;
+    /*border-bottom: 1px dotted;*/
+    border-bottom: 0;
+  }
 }
 
 b,
@@ -162,27 +161,29 @@ dfn {
   font-style: italic;
 }
 
-figure blockquote {
-  padding-top: remy(26px);
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: remy(26px);
-
-  @media screen and (min-width: $breakpoint--typography) {
-    padding-top: remy(62px);
-    padding-right: remy(31px);
+figure {
+  blockquote {
+    padding-top: remy(26px);
+    padding-right: 0;
     padding-bottom: 0;
-    padding-left: remy(31px);
-    text-align: center;
-  }
-}
+    padding-left: remy(26px);
 
-figure blockquote p {
-  font-size: remy(27px);
-  line-height: remy(39px);
+    @media screen and (min-width: $breakpoint--typography) {
+      padding-top: remy(62px);
+      padding-right: remy(31px);
+      padding-bottom: 0;
+      padding-left: remy(31px);
+      text-align: center;
+    }
 
-  @media screen and (min-width: $breakpoint--typography) {
-    line-height: remy(46.5px);
+    p {
+      font-size: remy(27px);
+      line-height: remy(39px);
+
+      @media screen and (min-width: $breakpoint--typography) {
+        line-height: remy(46.5px);
+      }
+    }
   }
 }
 
@@ -216,9 +217,9 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }

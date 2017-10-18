@@ -31,33 +31,34 @@
     max-width: remy(1368px);
   }
 
-  &::after {
+  &:after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
-}
 
-.ether-container-full {
-  padding-right: .9375rem;
-  padding-left: .9375rem;
-  margin-right: auto;
-  margin-left: auto;
+  &-full {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    margin-right: auto;
+    margin-left: auto;
 
-  &::after {
-    display: table;
-    clear: both;
-    content: "";
+    &:after {
+      display: table;
+      clear: both;
+      content: '';
+    }
   }
 }
 
 .ether-row {
   margin-right: -.9375rem;
   margin-left: -.9375rem;
+
   &::after {
     display: table;
     clear: both;
-    content: "";
+    content: '';
   }
 }
 

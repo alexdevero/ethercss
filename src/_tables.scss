@@ -34,7 +34,7 @@ td {
     padding-left: 0;
   }
 
-  td:last-child {
+  &:last-child {
     padding-right: 0;
   }
 }

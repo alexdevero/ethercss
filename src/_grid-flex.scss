@@ -31,35 +31,34 @@
     max-width: remy(1368px);
   }
 
-  &::after {
-    display: table;
+  &:after {
     clear: both;
-    content: "";
+    display: table;
+    content: '';
+  }
+
+  &-full {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:after {
+      clear: both;
+      display: table;
+      content: '';
+    }
   }
 }
 
-.ether-container-flex-full {
-  padding-right: .9375rem;
-  padding-left: .9375rem;
-  margin-right: auto;
-  margin-left: auto;
 
-  &::after {
-    display: table;
-    clear: both;
-    content: "";
-  }
-}
-
+/* Default column settings */
 .ether-row-flex {
   display: flex;
   flex-wrap: wrap;
   margin-right: -.9375rem;
   margin-left: -.9375rem;
-}
 
-/* Default column settings */
-.ether-row-flex {
   .ether-xs-1,
   .ether-xs-2,
   .ether-xs-3,
@@ -144,16 +143,14 @@
   .ether-xxl-10,
   .ether-xxl-11,
   .ether-xxl-12 {
-    flex: 1 1 0;
     position: relative;
+    flex: 1 1 0;
     padding-right: .9375rem;
     padding-left: .9375rem;
     min-height: 1px;
   }
-}
 
-/* Mobile first queries */
-.ether-row-flex {
+  /* Mobile first queries */
   .ether-xs-1,
   .ether-xs-2,
   .ether-xs-3,
@@ -170,68 +167,66 @@
   }
 
   .ether-xs-1 {
-    max-width: 8.333333%;
     flex: 0 0 8.333333%;
+    max-width: 8.333333%;
   }
 
   .ether-xs-2 {
-    max-width: 16.666667%;
     flex: 0 0 16.666667%;
+    max-width: 16.666667%;
   }
 
   .ether-xs-3 {
-    max-width: 25%;
     flex: 0 0 25%;
+    max-width: 25%;
   }
 
   .ether-xs-4 {
-    max-width: 33.333333%;
     flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 
   .ether-xs-5 {
-    max-width: 41.666667%;
     flex: 0 0 41.666667%;
+    max-width: 41.666667%;
   }
 
   .ether-xs-6 {
-    max-width: 50%;
     flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .ether-xs-7 {
-    max-width: 58.333333%;
     flex: 0 0 58.333333%;
+    max-width: 58.333333%;
   }
 
   .ether-xs-8 {
-    max-width: 66.666667%;
     flex: 0 0 66.666667%;
+    max-width: 66.666667%;
   }
 
   .ether-xs-9 {
-    max-width: 75%;
     flex: 0 0 75%;
+    max-width: 75%;
   }
 
   .ether-xs-10 {
-    max-width: 83.333333%;
     flex: 0 0 83.333333%;
+    max-width: 83.333333%;
   }
 
   .ether-xs-11 {
-    max-width: 91.666667%;
     flex: 0 0 91.666667%;
+    max-width: 91.666667%;
   }
 
   .ether-xs-12 {
-    max-width: 100%;
     flex: 0 0 100%;
+    max-width: 100%;
   }
-}
 
-/* Mobile first queries - Content manipulation */
-.ether-row-flex {
+  /* Mobile first queries - Content manipulation */
   .ether-xs-pull-0 {
     right: auto;
   }
@@ -387,11 +382,9 @@
   .ether-xs-offset-12 {
     margin-left: 100%;
   }
-}
 
-/* Screens 400px and up (larger than mobile) */
-@media (min-width: $screen--xm) {
-  .ether-row-flex {
+  /* Screens 400px and up (larger than mobile) */
+  @media (min-width: $screen--xm) {
     .ether-xm-1,
     .ether-xm-2,
     .ether-xm-3,
@@ -408,70 +401,68 @@
     }
 
     .ether-xm-1 {
-      max-width: 8.333333%;
       flex: 0 0 8.333333%;
+      max-width: 8.333333%;
     }
 
     .ether-xm-2 {
-      max-width: 16.666667%;
       flex: 0 0 16.666667%;
+      max-width: 16.666667%;
     }
 
     .ether-xm-3 {
-      max-width: 25%;
       flex: 0 0 25%;
+      max-width: 25%;
     }
 
     .ether-xm-4 {
-      max-width: 33.333333%;
       flex: 0 0 33.333333%;
+      max-width: 33.333333%;
     }
 
     .ether-xm-5 {
-      max-width: 41.666667%;
       flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
 
     .ether-xm-6 {
-      max-width: 50%;
       flex: 0 0 50%;
+      max-width: 50%;
     }
 
     .ether-xm-7 {
-      max-width: 58.333333%;
       flex: 0 0 58.333333%;
+      max-width: 58.333333%;
     }
 
     .ether-xm-8 {
-      max-width: 66.666667%;
       flex: 0 0 66.666667%;
+      max-width: 66.666667%;
     }
 
     .ether-xm-9 {
-      max-width: 75%;
       flex: 0 0 75%;
+      max-width: 75%;
     }
 
     .ether-xm-10 {
-      max-width: 83.333333%;
       flex: 0 0 83.333333%;
+      max-width: 83.333333%;
     }
 
     .ether-xm-11 {
-      max-width: 91.666667%;
       flex: 0 0 91.666667%;
+      max-width: 91.666667%;
     }
 
     .ether-xm-12 {
-      max-width: 100%;
       flex: 0 0 100%;
+      max-width: 100%;
     }
   }
-}
 
-/* Screens 400px and up (larger than mobile) - Content manipulation */
-@media (min-width: $screen--xm) {
-  .ether-row-flex {
+  /* Screens 400px and up (larger than mobile) - Content manipulation */
+  @media (min-width: $screen--xm) {
     .ether-xm-pull-0 {
       right: auto;
     }
@@ -628,11 +619,9 @@
       margin-left: 100%;
     }
   }
-}
 
-/* Screens 544px and up (larger than phablets) */
-@media (min-width: $screen--sm) {
-  .ether-row-flex {
+  /* Screens 544px and up (larger than phablets) */
+  @media (min-width: $screen--sm) {
     .ether-sm-1,
     .ether-sm-2,
     .ether-sm-3,
@@ -649,70 +638,68 @@
     }
 
     .ether-sm-1 {
-      max-width: 8.333333%;
       flex: 0 0 8.333333%;
+      max-width: 8.333333%;
     }
 
     .ether-sm-2 {
-      max-width: 16.666667%;
       flex: 0 0 16.666667%;
+      max-width: 16.666667%;
     }
 
     .ether-sm-3 {
-      max-width: 25%;
       flex: 0 0 25%;
+      max-width: 25%;
     }
 
     .ether-sm-4 {
-      max-width: 33.333333%;
       flex: 0 0 33.333333%;
+      max-width: 33.333333%;
     }
 
     .ether-sm-5 {
-      max-width: 41.666667%;
       flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
 
     .ether-sm-6 {
-      max-width: 50%;
       flex: 0 0 50%;
+      max-width: 50%;
     }
 
     .ether-sm-7 {
-      max-width: 58.333333%;
       flex: 0 0 58.333333%;
+      max-width: 58.333333%;
     }
 
     .ether-sm-8 {
-      max-width: 66.666667%;
       flex: 0 0 66.666667%;
+      max-width: 66.666667%;
     }
 
     .ether-sm-9 {
-      max-width: 75%;
       flex: 0 0 75%;
+      max-width: 75%;
     }
 
     .ether-sm-10 {
-      max-width: 83.333333%;
       flex: 0 0 83.333333%;
+      max-width: 83.333333%;
     }
 
     .ether-sm-11 {
-      max-width: 91.666667%;
       flex: 0 0 91.666667%;
+      max-width: 91.666667%;
     }
 
     .ether-sm-12 {
-      max-width: 100%;
       flex: 0 0 100%;
+      max-width: 100%;
     }
   }
-}
 
-/* Screens 544px and up (larger than phablets) - Content manipulation */
-@media (min-width: $screen--sm) {
-  .ether-row-flex {
+  /* Screens 544px and up (larger than phablets) - Content manipulation */
+  @media (min-width: $screen--sm) {
     .ether-sm-pull-0 {
       right: auto;
     }
@@ -869,11 +856,9 @@
       margin-left: 100%;
     }
   }
-}
 
-/* Screens 768px and up (larger than tablet) */
-@media (min-width: $screen--md) {
-  .ether-row-flex {
+  /* Screens 768px and up (larger than tablet) */
+  @media (min-width: $screen--md) {
     .ether-md-1,
     .ether-md-2,
     .ether-md-3,
@@ -890,70 +875,68 @@
     }
 
     .ether-md-1 {
-      max-width: 8.333333%;
       flex: 0 0 8.333333%;
+      max-width: 8.333333%;
     }
 
     .ether-md-2 {
-      max-width: 16.666667%;
       flex: 0 0 16.666667%;
+      max-width: 16.666667%;
     }
 
     .ether-md-3 {
-      max-width: 25%;
       flex: 0 0 25%;
+      max-width: 25%;
     }
 
     .ether-md-4 {
-      max-width: 33.333333%;
       flex: 0 0 33.333333%;
+      max-width: 33.333333%;
     }
 
     .ether-md-5 {
-      max-width: 41.666667%;
       flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
 
     .ether-md-6 {
-      max-width: 50%;
       flex: 0 0 50%;
+      max-width: 50%;
     }
 
     .ether-md-7 {
-      max-width: 58.333333%;
       flex: 0 0 58.333333%;
+      max-width: 58.333333%;
     }
 
     .ether-md-8 {
-      max-width: 66.666667%;
       flex: 0 0 66.666667%;
+      max-width: 66.666667%;
     }
 
     .ether-md-9 {
-      max-width: 75%;
       flex: 0 0 75%;
+      max-width: 75%;
     }
 
     .ether-md-10 {
-      max-width: 83.333333%;
       flex: 0 0 83.333333%;
+      max-width: 83.333333%;
     }
 
     .ether-md-11 {
-      max-width: 91.666667%;
       flex: 0 0 91.666667%;
+      max-width: 91.666667%;
     }
 
     .ether-md-12 {
-      max-width: 100%;
       flex: 0 0 100%;
+      max-width: 100%;
     }
   }
-}
 
-/* Screens 768px and up (larger than tablet) - Content manipulation */
-@media (min-width: $screen--md) {
-  .ether-row-flex {
+  /* Screens 768px and up (larger than tablet) - Content manipulation */
+  @media (min-width: $screen--md) {
     .ether-md-pull-0 {
       right: auto;
     }
@@ -1110,11 +1093,9 @@
       margin-left: 100%;
     }
   }
-}
 
-/* Screens 992px and up (larger than desktop) */
-@media (min-width: $screen--lg) {
-  .ether-row-flex {
+  /* Screens 992px and up (larger than desktop) */
+  @media (min-width: $screen--lg) {
     .ether-lg-1,
     .ether-lg-2,
     .ether-lg-3,
@@ -1131,70 +1112,68 @@
     }
 
     .ether-lg-1 {
-      max-width: 8.333333%;
       flex: 0 0 8.333333%;
+      max-width: 8.333333%;
     }
 
     .ether-lg-2 {
-      max-width: 16.666667%;
       flex: 0 0 16.666667%;
+      max-width: 16.666667%;
     }
 
     .ether-lg-3 {
-      max-width: 25%;
       flex: 0 0 25%;
+      max-width: 25%;
     }
 
     .ether-lg-4 {
-      max-width: 33.333333%;
       flex: 0 0 33.333333%;
+      max-width: 33.333333%;
     }
 
     .ether-lg-5 {
-      max-width: 41.666667%;
       flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
 
     .ether-lg-6 {
-      max-width: 50%;
       flex: 0 0 50%;
+      max-width: 50%;
     }
 
     .ether-lg-7 {
-      max-width: 58.333333%;
       flex: 0 0 58.333333%;
+      max-width: 58.333333%;
     }
 
     .ether-lg-8 {
-      max-width: 66.666667%;
       flex: 0 0 66.666667%;
+      max-width: 66.666667%;
     }
 
     .ether-lg-9 {
-      max-width: 75%;
       flex: 0 0 75%;
+      max-width: 75%;
     }
 
     .ether-lg-10 {
-      max-width: 83.333333%;
       flex: 0 0 83.333333%;
+      max-width: 83.333333%;
     }
 
     .ether-lg-11 {
-      max-width: 91.666667%;
       flex: 0 0 91.666667%;
+      max-width: 91.666667%;
     }
 
     .ether-lg-12 {
-      max-width: 100%;
       flex: 0 0 100%;
+      max-width: 100%;
     }
   }
-}
 
-/* Screens 992px and up (larger than desktop) - Content manipulation */
-@media (min-width: $screen--lg) {
-  .ether-row-flex {
+  /* Screens 992px and up (larger than desktop) - Content manipulation */
+  @media (min-width: $screen--lg) {
     .ether-lg-pull-0 {
       right: auto;
     }
@@ -1351,11 +1330,9 @@
       margin-left: 100%;
     }
   }
-}
 
-/* Screens 1200px and up (larger than HD desktop) */
-@media (min-width: $screen--xl) {
-  .ether-row-flex {
+  /* Screens 1200px and up (larger than HD desktop) */
+  @media (min-width: $screen--xl) {
     .ether-xl-1,
     .ether-xl-2,
     .ether-xl-3,
@@ -1372,70 +1349,68 @@
     }
 
     .ether-xl-1 {
-      max-width: 8.333333%;
       flex: 0 0 8.333333%;
+      max-width: 8.333333%;
     }
 
     .ether-xl-2 {
-      max-width: 16.666667%;
       flex: 0 0 16.666667%;
+      max-width: 16.666667%;
     }
 
     .ether-xl-3 {
-      max-width: 25%;
       flex: 0 0 25%;
+      max-width: 25%;
     }
 
     .ether-xl-4 {
-      max-width: 33.333333%;
       flex: 0 0 33.333333%;
+      max-width: 33.333333%;
     }
 
     .ether-xl-5 {
-      max-width: 41.666667%;
       flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
 
     .ether-xl-6 {
-      max-width: 50%;
       flex: 0 0 50%;
+      max-width: 50%;
     }
 
     .ether-xl-7 {
-      max-width: 58.333333%;
       flex: 0 0 58.333333%;
+      max-width: 58.333333%;
     }
 
     .ether-xl-8 {
-      max-width: 66.666667%;
       flex: 0 0 66.666667%;
+      max-width: 66.666667%;
     }
 
     .ether-xl-9 {
-      max-width: 75%;
       flex: 0 0 75%;
+      max-width: 75%;
     }
 
     .ether-xl-10 {
-      max-width: 83.333333%;
       flex: 0 0 83.333333%;
+      max-width: 83.333333%;
     }
 
     .ether-xl-11 {
-      max-width: 91.666667%;
       flex: 0 0 91.666667%;
+      max-width: 91.666667%;
     }
 
     .ether-xl-12 {
-      max-width: 100%;
       flex: 0 0 100%;
+      max-width: 100%;
     }
   }
-}
 
-/* Screens 1200px and up (larger than HD desktop) - Content manipulation */
-@media (min-width: $screen--xl) {
-  .ether-row-flex {
+  /* Screens 1200px and up (larger than HD desktop) - Content manipulation */
+  @media (min-width: $screen--xl) {
     .ether-xl-pull-0 {
       right: auto;
     }
@@ -1592,11 +1567,9 @@
       margin-left: 100%;
     }
   }
-}
 
-/* Screens 1440px and up (larger than ultra HD desktop) */
-@media (min-width: $screen--xxl) {
-  .ether-row-flex {
+  /* Screens 1440px and up (larger than ultra HD desktop) */
+  @media (min-width: $screen--xxl) {
     .ether-xxl-1,
     .ether-xxl-2,
     .ether-xxl-3,
@@ -1613,70 +1586,68 @@
     }
 
     .ether-xxl-1 {
-      max-width: 8.333333%;
       flex: 0 0 8.333333%;
+      max-width: 8.333333%;
     }
 
     .ether-xxl-2 {
-      max-width: 16.666667%;
       flex: 0 0 16.666667%;
+      max-width: 16.666667%;
     }
 
     .ether-xxl-3 {
-      max-width: 25%;
       flex: 0 0 25%;
+      max-width: 25%;
     }
 
     .ether-xxl-4 {
-      max-width: 33.333333%;
       flex: 0 0 33.333333%;
+      max-width: 33.333333%;
     }
 
     .ether-xxl-5 {
-      max-width: 41.666667%;
       flex: 0 0 41.666667%;
+      max-width: 41.666667%;
     }
 
     .ether-xxl-6 {
-      max-width: 50%;
       flex: 0 0 50%;
+      max-width: 50%;
     }
 
     .ether-xxl-7 {
-      max-width: 58.333333%;
       flex: 0 0 58.333333%;
+      max-width: 58.333333%;
     }
 
     .ether-xxl-8 {
-      max-width: 66.666667%;
       flex: 0 0 66.666667%;
+      max-width: 66.666667%;
     }
 
     .ether-xxl-9 {
-      max-width: 75%;
       flex: 0 0 75%;
+      max-width: 75%;
     }
 
     .ether-xxl-10 {
-      max-width: 83.333333%;
       flex: 0 0 83.333333%;
+      max-width: 83.333333%;
     }
 
     .ether-xxl-11 {
-      max-width: 91.666667%;
       flex: 0 0 91.666667%;
+      max-width: 91.666667%;
     }
 
     .ether-xxl-12 {
-      max-width: 100%;
       flex: 0 0 100%;
+      max-width: 100%;
     }
   }
-}
 
-/* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
-@media (min-width: $screen--xxl) {
-  .ether-row-flex {
+  /* Screens 1440px and up (larger than ultra HD desktop) - Content manipulation */
+  @media (min-width: $screen--xxl) {
     .ether-xxl-pull-0 {
       right: auto;
     }

@@ -3,10 +3,10 @@
 // Set box-sizing globally to handle padding and border widths
 html {
   box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  -webkit-text-size-adjust: 100%; // sass-lint:disable-line no-vendor-prefixes
+      -ms-text-size-adjust: 100%; // sass-lint:disable-line no-vendor-prefixes indentation
+  -ms-touch-action: manipulation; // sass-lint:disable-line no-vendor-prefixes
+      touch-action: manipulation; // sass-lint:disable-line no-vendor-prefixes indentation
 }
 
 *,
@@ -41,9 +41,11 @@ video {
   display: inline-block;
 }
 
-audio:not([controls]) {
-  display: none;
-  height: 0;
+audio {
+  &:not([controls]) {
+    display: none;
+    height: 0;
+  }
 }
 
 figure {
@@ -64,8 +66,10 @@ progress {
   vertical-align: baseline;
 }
 
-svg:not(:root) {
-  overflow: hidden;
+svg {
+  &:not(:root) {
+    overflow: hidden;
+  }
 }
 
 template,

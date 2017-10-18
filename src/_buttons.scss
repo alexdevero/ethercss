@@ -1,36 +1,28 @@
 /* Buttons */
 
-button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-  font: inherit;
-  line-height: 1;
-  text-transform: uppercase;
-     -moz-appearance: button;
-}
-
+// sass-lint:disable declarations-before-nesting
 button,
 [type='button'],
 [type='reset'],
 [type='submit'],
 .btn {
+  // Resets
+  -webkit-appearance: button; // sass-lint:disable-line no-vendor-prefixes
+     -moz-appearance: button; // sass-lint:disable-line no-vendor-prefixes indentation
+  font: inherit;
+  // line-height: 1;
+  text-transform: uppercase;
+
+  &::-moz-focus-inner { // sass-lint:disable-line no-vendor-prefixes
+    padding: 0;
+    border-style: none;
+  }
+
+  &:-moz-focusring { // sass-lint:disable-line no-vendor-prefixes
+    outline: 1px dotted ButtonText;
+  }
+
+  // Custom styles
   display: inline-block;
   padding-top: remy(12px);
   padding-right: remy(28px);
@@ -42,7 +34,6 @@ button,
   line-height: 1.382;
   text-decoration: none;
   letter-spacing: .1rem;
-  text-transform: uppercase;
   white-space: nowrap;
   background-color: transparent;
   border: 1px solid $color--border;
@@ -60,72 +51,73 @@ button,
   &:focus {
     outline: 0;
   }
-}
 
-.btn--alert,
-.btn--disabled,
-.btn--green,
-.btn--primary,
-.btn--secondary {
-  color: #fff;
-
-  &:focus,
-  &:hover {
+  &--alert,
+  &--disabled,
+  &--green,
+  &--primary,
+  &--secondary {
     color: #fff;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
   }
-}
 
-.btn--alert {
-  background-color: $color--accent;
-  border-color: $color--accent;
+  &--alert {
+    background-color: $color--accent;
+    border-color: $color--accent;
 
-  &:focus,
-  &:hover {
-    background-color: darken($color--accent, $fib--eight);
-    border-color: darken($color--accent, $fib--eight);
+    &:focus,
+    &:hover {
+      background-color: darken($color--accent, $fib--eight);
+      border-color: darken($color--accent, $fib--eight);
+    }
   }
-}
 
-.btn--disabled {
-  background-color: $color--border;
-  border-color: $color--border;
-  cursor: default;
-
-  &:focus,
-  &:hover {
+  &--disabled {
     background-color: $color--border;
     border-color: $color--border;
+    cursor: default;
+
+    &:focus,
+    &:hover {
+      background-color: $color--border;
+      border-color: $color--border;
+    }
+  }
+
+  &--green {
+    background-color: $color--green;
+    border-color: $color--green;
+
+    &:focus,
+    &:hover {
+      background-color: darken($color--green, $fib--eight);
+      border-color: darken($color--green, $fib--eight);
+    }
+  }
+
+  &--primary {
+    background-color: $color--primary;
+    border-color: $color--primary;
+
+    &:focus,
+    &:hover {
+      background-color: darken($color--primary, $fib--eight);
+      border-color: darken($color--primary, $fib--eight);
+    }
+  }
+
+  &--secondary {
+    background-color: $color--secondary;
+    border-color: $color--secondary;
+
+    &:focus,
+    &:hover {
+      background-color: darken($color--secondary, $fib--eight);
+    }
   }
 }
-
-.btn--green {
-  background-color: $color--green;
-  border-color: $color--green;
-
-  &:focus,
-  &:hover {
-    background-color: darken($color--green, $fib--eight);
-    border-color: darken($color--green, $fib--eight);
-  }
-}
-
-.btn--primary {
-  background-color: $color--primary;
-  border-color: $color--primary;
-
-  &:focus,
-  &:hover {
-    background-color: darken($color--primary, $fib--eight);
-    border-color: darken($color--primary, $fib--eight);
-  }
-}
-
-.btn--secondary {
-  background-color: $color--secondary;
-  border-color: $color--secondary;
-
-  &:focus,
-  &:hover {
-    background-color: darken($color--secondary, $fib--eight);
-  }
-}
+// sass-lint:enable declarations-before-nesting
