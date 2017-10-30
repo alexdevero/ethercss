@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <!-- [![Build Status](https://circleci.com/gh/alexdevero/EtherCSS.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/alexdevero/EtherCSS/) -->  
   <a href="https://david-dm.org/alexdevero/EtherCSS"><img alt="Dependency Status" src="https://david-dm.org/alexdevero/EtherCSS.svg?style=flat"></a>
   <a href="https://david-dm.org/alexdevero/EtherCSS?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdevero/EtherCSS/dev-status.svg?style=flat"></a>
@@ -18,6 +18,7 @@
 CSS framework for the Web of tomorrow.
 
 ### Table of contents
+
 * [Why is EtherCSS awesome](#why-is-ethercss-awesome)
 * [Why you will love EtherCSS](#why-you-will-love-ethercss)
 * [Installation](#installation)
@@ -47,11 +48,11 @@ EtherCSS is lightweight and simple. It provides only minimal setup of styles for
 
 **Install with npm**
 ```sh
-$ npm install ethercss
+npm install ethercss
 ```
 Or, if you prefer using Yarn:
 ```sh
-$ yarn add ethercss
+yarn add ethercss
 ```
 
 ### Demo:
