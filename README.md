@@ -1,16 +1,16 @@
 ﻿<p align="center">
-  <!-- [![Build Status](https://circleci.com/gh/alexdevero/EtherCSS.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/alexdevero/EtherCSS/) -->  
+  <a href="https://circleci.com/gh/alexdevero/EtherCSS/"><img alt="Build status" src="https://circleci.com/gh/alexdevero/EtherCSS.svg?style=shield&circle-token=:circle-token"></a>
   <a href="https://david-dm.org/alexdevero/EtherCSS"><img alt="Dependency Status" src="https://david-dm.org/alexdevero/EtherCSS.svg?style=flat"></a>
   <a href="https://david-dm.org/alexdevero/EtherCSS?type=dev"><img alt="devDependency Status" src="https://david-dm.org/alexdevero/EtherCSS/dev-status.svg?style=flat"></a>
   <a href="https://alexdevero.com"><img alt="Built by DEVERO" src="https://img.shields.io/badge/built%20by-DEVERO-brightgreen.svg?colorB=d30320"></a>
   <a href="http://opensource.org/licenses/MIT"><img alt="MIT License" src="https://img.shields.io/npm/l/express.svg"></a>
-  <a href="#"><img alt="Downloads last year" src="https://img.shields.io/github/release/alexdevero/EtherCSS.svg"></a>
 </p>
 
 <p align="center">
-  <a href="#"><img alt="Downloads last week" src="https://img.shields.io/npm/dw/localeval.svg"></a>
-  <a href="#"><img alt="Downloads last moth" src="https://img.shields.io/npm/dm/localeval.svg"></a>
-  <a href="#"><img alt="Downloads last year" src="https://img.shields.io/npm/dy/localeval.svg"></a>
+  <a href="https://www.npmjs.com/package/ethercss"><img alt="Downloads last week" src="https://img.shields.io/npm/dw/localeval.svg"></a>
+  <a href="https://www.npmjs.com/package/ethercss"><img alt="Downloads last moth" src="https://img.shields.io/npm/dm/localeval.svg"></a>
+  <a href="https://www.npmjs.com/package/ethercss"><img alt="Downloads last year" src="https://img.shields.io/npm/dy/localeval.svg"></a>
+  <a href="https://github.com/alexdevero/EtherCSS/releases"><img alt="Current release" src="https://img.shields.io/github/release/alexdevero/EtherCSS.svg"></a>
 </p>
 
 # EtherCSS
