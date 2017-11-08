@@ -9,9 +9,9 @@
     "yarn": ">=1.x.x"
   },
   "scripts": {
-    "build": "set NODE_ENV=production && npm run test && gulp clean && gulp build",
-    "start": "set NODE_ENV=development && gulp dev",
-    "test": "set NODE_ENV=test && sass-lint -v -q"
+    "build": "cross-env NODE_ENV=production npm run test && gulp clean && gulp build",
+    "start": "cross-env NODE_ENV=development gulp dev",
+    "test": "cross-env NODE_ENV=test sass-lint -v -q"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "browser-sync": "^2.18.13",
+    "cross-env": "^5.1.1",
     "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
