@@ -4,9 +4,9 @@
   "description": "Lightweight and flexible CSS framework for the Web of tomorrow.",
   "main": "index.js",
   "engines": {
-    "node": ">=5.x.x",
-    "npm": ">=8.x.x",
-    "yarn": ">=1.x.x"
+    "node": ">=9.0",
+    "npm": ">=5.0",
+    "yarn": ">=1.0"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production npm run test && gulp clean && gulp build",
